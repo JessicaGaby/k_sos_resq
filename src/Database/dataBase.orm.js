@@ -3,7 +3,7 @@ const { MYSQLHOST, MYSQLUSER, MYSQLPASSWORD, MYSQLDATABASE, MYSQLPORT, MYSQL_URI
 
 let sequelize;
 
-// Usar URI de conexión si está disponible
+// Usar URI de conexión si está disponible  jessica
 if (MYSQL_URI) {
     sequelize = new Sequelize(MYSQL_URI);
 } else {
