@@ -86,5 +86,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Rutas - Definir tus rutas aquí
 
+app.use(require('./router/inicio.router'))
+
 // Exportar la aplicación
 module.exports = app;
