@@ -3,7 +3,7 @@ const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
 registro_familiarCtl.mostrar = (req, res) => {
-    res.render('registro_familiares/agregar');
+    res.render('registro_familiar/agregar');
 }
 
 //mandar
@@ -18,7 +18,7 @@ registro_familiarCtl.mandar = async (req, res) => {
     }
     await orm.registro_familiar.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/registro_familiares/listar/')
+    res.redirect('/registro_familiar/listar/')
 }
 
 registro_familiarCtl.listar = async (req, res) => {
@@ -30,7 +30,7 @@ registro_familiarCtl.listar = async (req, res) => {
 registro_familiarCtl.traer = async (req, res) => {
     const ids = req.params.id
     const lista = await sql.query('select * from registro_familiares where id_registro_familiar =?', [ids])
-    res.render('registro_familiares/editar', { lista })
+    res.render('registro_familiar/editar', { lista })
 }
 
 registro_familiarCtl.actualizar = async (req, res) => {
@@ -46,14 +46,14 @@ registro_familiarCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/registro_familiares/listar/');
+    res.redirect('/registro_familiar/listar/');
 }
 registro_familiarCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     await orm.registro_familiar.destroy({ where: { id_registro_familiar: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/registro_familiares/listar/');
+            res.redirect('/registro_familiar/listar/');
         })
 }
 
