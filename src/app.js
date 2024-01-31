@@ -87,10 +87,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Rutas - Definir tus rutas aquí
 
 app.use(require('./router/inicio.router'))
-app.use(require('./router/objeto.router'))
-app.use(require('./router/persona.router'))
+app.use('/objeto',require('./router/objeto.router'))
+
 //app.use(require('./router/registro_familiar.router'))
 app.use('/registro_familiar', require('./router/registro_familiar.router'))
+app.use('/persona', require('./router/persona.router'))
 
 
 // Exportar la aplicación

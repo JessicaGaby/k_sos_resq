@@ -10,7 +10,7 @@ const persona = (sequelize, type) => {
         fecha_nacimiento: type.STRING,
         sex: type.STRING,
         direccion: type.STRING,
-        correo_electronico: type.STRING,
+        correo_persona: type.STRING,
     
 
         crearPersona:{

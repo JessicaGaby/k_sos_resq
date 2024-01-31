@@ -9,7 +9,7 @@ const objeto = (sequelize, type) => {
         modelo: type.STRING,
         numero_serie: type.STRING,
         numero_contacto: type.STRING,
-        correo_electronico:type.STRING,
+        correo_objeto:type.STRING,
 
     
 

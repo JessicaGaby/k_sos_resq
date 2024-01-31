@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/css/buses/agregar.css">
-<form action="/personas/agregar" method="post">
+<form action="/persona/agregar" method="post">
 
     <body>
         <div id="container">
@@ -22,7 +22,7 @@
             <input type="text" id="direccion" name="direccion" required>
 
             <label id="correo_electronicos" for="placa">Correo Electronico</label> <br>
-            <input type="text" id="correo_electronico" name="correo_electronico" required>
+            <input type="text" id="correo_persona" name="correo_persona" required>
 
             <br> <br><br>
             <br> <br>
@@ -30,7 +30,7 @@
                 <button (click)="crearRegistro()">Registrar</button>
             </div>
             <div class="cancelar">
-                <button (click)="volverRegistro()">Cancelar</button>
+            <button type="submit" id="">Guardar</button>
             </div>
         </div>
     </body>

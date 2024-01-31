@@ -6,29 +6,27 @@
 
             <h2>Detalle Familiar</h2>
 
-            <label id="marcas" for="placa">Marca</label> <br>
+            <label id="marcas" for="marca">Marca</label> <br>
             <input type="text" id="marca" name="marca" required>
 
-            <label id="modelo" for="placa">Modelo</label> <br>
+            <label id="modelo" for="modelo">Modelo</label> <br>
             <input type="text" id="modelo" name="modelo" required>
 
 
-            <label id="numero_series" for="placa">Numero de Serie</label> <br>
+            <label id="numero_series" for="numero_serie">Numero de Serie</label> <br>
             <input type="text" id="numero_serie" name="numero_serie" required>
 
-            <label id="numero_contactos" for="placa">Numero de Contacto</label> <br>
-            <input type="number" id="numero_contacto" name="numero_contacto" required>
+            <label id="numero_contacto" for="numero_contacto">Numero de Contacto</label> <br>
+            <input type="text" id="numero_contacto" name="numero_contacto" required>
 
-            <label id="correo_electronico" for="placa">Correo Electronico</label> <br>
-            <input type="text" id="correo_electronico" name="correo_electronico" required>
+            <label id="correo_electronico" for="correo_objeto">Correo Electronico</label> <br>
+            <input type="text" id="correo_electronico" name="correo_objeto" required>
 
             <br> <br><br>
             <br> <br>
-            <div class="registrarse">
-                <button (click)="crearRegistro()">Registrar</button>
-            </div>
-            <div class="cancelar">
-                <button (click)="volverRegistro()">Cancelar</button>
+            <div id="boton">
+            <button type="submit" id="">Guardar</button>
+            
             </div>
         </div>
     </body>

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/buses/editar.css">
 {{#each lista}}
-<form action="/personas/editar/{{id_persona}}" method="post">
+<form action="/persona/editar/{{id_persona}}" method="post">
 
     <body>
 
@@ -23,8 +23,8 @@
             <label id="direcciones" for="placa">Direccion</label> <br>
             <input type="text" id="direccion" name="direccion" value="{{direccion}}" required>
 
-            <label id="correo_electronicos" for="placa">Correo Electronico</label> <br>
-            <input type="text" id="correo_electronico" name="correo_electronico" value="{{correo_electronico}}" required>
+            <label id="correo_persona" for="correo_persona">Correo Electronico</label> <br>
+            <input type="text" id="correo_persona" name="correo_persona" value="{{correo_persona}}" required>
 
             <br> <br><br>
             <br> <br>
