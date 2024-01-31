@@ -1,10 +1,10 @@
 const express = require("express");
 const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
-
+//Peticiones 
 const router = express.Router();
 const { mostrar, mandar, listar, actualizar, eliminar, traer} = require("../controller/detalle_familiar.controller");
 
-
+//aplicación de cada metodo 
 router.get('/agregar',isLoggedIn,mostrar);
 router.post('/agregar',isLoggedIn,mandar)
 router.get('/listar',isLoggedIn,listar)

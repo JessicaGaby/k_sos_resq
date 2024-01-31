@@ -45,7 +45,6 @@ sequelize.sync({ force: false })
     const objetoModel = require('../models/objeto');
     const mensajePersonalizadoModel = require('../models/mensaje_personalizado');
     const mascotaModel = require('../models/mascota');
-    //const historialMensajeModel = require('../models/historial_mensaje');
     const historialActivacionModel = require('../models/historial_activacion');
     const detalleUsuarioModel = require('../models/detalle_usuario');
     const detallePersonaModel = require('../models/detalle_persona');
@@ -65,7 +64,6 @@ sequelize.sync({ force: false })
     const mensaje_personalizado =mensajePersonalizadoModel(sequelize, Sequelize)
     const mascota = mascotaModel (sequelize, Sequelize)
     const historial_activacion = historialActivacionModel (sequelize, Sequelize)
-    //const historial_mensaje = historialMensajeModel(sequelize, Sequelize)
     const detalle_usuario = detalleUsuarioModel(sequelize, Sequelize)
     const detalle_persona = detallePersonaModel(sequelize, Sequelize)
     const detalle_objeto = detalleObjetoModel(sequelize, Sequelize)
@@ -98,7 +96,7 @@ sequelize.sync({ force: false })
     mascota.hasMany(historial_activacion)
     historial_activacion.belongsTo(mascota)
 
-    //YA ESTA HECHO NO TOCAR, SAPOS
+    
     historial_activacion.hasMany(detalle_historial)
     detalle_historial.belongsTo(historial_activacion)
     

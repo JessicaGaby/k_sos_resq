@@ -9,7 +9,7 @@ usuarioCtl.mostrar = (req, res) => {
 //mandar
 usuarioCtl.mandar = async (req, res) => {
     const id =req.id_usuario  //ojo
-    const { nombres,apellidos,correo_electronico,contrasena,fecha_registro,fecha_nacimiento,contactos_emergencia } = req.body
+    const { nombres,apellidos,correo_electronico,contrasena,fecha_registro,fecha_nacimiento } = req.body
     const nuevoEnvio = {
         nombres,
         apellidos,
@@ -17,7 +17,7 @@ usuarioCtl.mandar = async (req, res) => {
         contrasena,
         fecha_registro,
         fecha_nacimiento,
-        contactos_emergencia
+        
     }
     await orm.usuario.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
@@ -38,15 +38,14 @@ usuarioCtl.traer = async (req, res) => {
 
 usuarioCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { nombres,apellidos,correo_electronico,contrasena,fecha_registro,fecha_nacimiento,contactos_emergencia } = req.body
+    const { nombres,apellidos,correo_electronico,contrasena,fecha_registro,fecha_nacimiento } = req.body
     const nuevoEnvio = {
         nombres,
         apellidos,
         correo_electronico,
         contrasena,
         fecha_registro,
-        fecha_nacimiento,
-        contactos_emergencia
+        fecha_nacimiento
     }
     await orm.usuario.findOne({ where: { id_usuario: ids } })
         .then(actualizar => {

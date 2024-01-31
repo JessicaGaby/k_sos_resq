@@ -11,7 +11,6 @@ const usuario = (sequelize, type) => {
         contrasena: type.STRING,
         fecha_registro: type.STRING,
         fecha_nacimiento: type.STRING,
-        contactos_emergencia: type.STRING,
     
         crearUsuario:{
             type: 'TIMESTAMP',
