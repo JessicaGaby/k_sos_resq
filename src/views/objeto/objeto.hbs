@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/buses/agregar.css">
+<form action="/objetos/agregar" method="post">
+
+    <body>
+        <div id="container">
+
+            <h2>Detalle Familiar</h2>
+
+            <label id="marcas" for="placa">Marca</label> <br>
+            <input type="text" id="marca" name="marca" required>
+
+            <label id="modelo" for="placa">Modelo</label> <br>
+            <input type="text" id="modelo" name="modelo" required>
+
+
+            <label id="numero_series" for="placa">Numero de Serie</label> <br>
+            <input type="text" id="numero_serie" name="numero_serie" required>
+
+            <label id="numero_contactos" for="placa">Numero de Contacto</label> <br>
+            <input type="number" id="numero_contacto" name="numero_contacto" required>
+
+            <label id="correo_electronico" for="placa">Correo Electronico</label> <br>
+            <input type="text" id="correo_electronico" name="correo_electronico" required>
+
+            <br> <br><br>
+            <br> <br>
+            <div class="registrarse">
+                <button (click)="crearRegistro()">Registrar</button>
+            </div>
+            <div class="cancelar">
+                <button (click)="volverRegistro()">Cancelar</button>
+            </div>
+        </div>
+    </body>
+</form>

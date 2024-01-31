@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/buses/agregar.css">
+<form action="/detalle_historiales/agregar" method="post">
+
+  <body>
+    <div id="container">
+
+      <h2>Detalle Historial</h2>
+
+        <label id="hora_activaciones" for="hora_activacion">Hora de Activacion:</label> <br>
+        <input type="time" id="hora_activacion" name="hora_activacion" required>
+
+        <label id="ubicaciones" for="ubicacion">Ubicacion:</label> <br>
+        <input type="text" id="ubicacion" name="ubicacion" required>
+
+        <br> <br><br>
+        <br> <br>
+      <div class="registrarse">
+        <button (click)="crearRegistro()">Registrar</button>
+      </div>
+      <div class="cancelar">
+        <button (click)="volverRegistro()">Cancelar</button>
+      </div>
+    </div>
+  </body>
+</form>

@@ -1,11 +1,10 @@
-const detalla_persona = (sequelize, type) => {
+const detalle_persona = (sequelize, type) => {
     return sequelize.define('detalles_personas', {
         id_detalle_persona: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        nombres: type.STRING,
         numero_telefonico: type.STRING,
     
 
@@ -23,4 +22,4 @@ const detalla_persona = (sequelize, type) => {
         timestamps: false,
     });
 }
-module.exports = detalla_persona
+module.exports = detalle_persona

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/buses/editar.css">
+{{#each lista}}
+<form action="/detalle_familiares/editar/{{id_mascota}}" method="post">
+
+  <body>
+
+   
+    <div id="container">
+      <h2>Actualización de Familiares</h2>
+
+      <label id="telefonos" for="telefono">Telefono</label> <br>
+      <input type="number" id="telefono" name="telefono" value="{{telefono}}" required>
+      
+
+      <div id="boton">
+        <button type="submit">Actualizar</button>
+      </div>
+      <div class="cancelar">
+        <button type="submit">Cancelar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+</form>
+{{/each}}
+
+</body>

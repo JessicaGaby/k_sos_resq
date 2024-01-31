@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/css/buses/editar.css">
+{{#each lista}}
+<form action="/mascota/editar/{{id_mascota}}" method="post">
+
+  <body>
+
+   
+    <div id="container">
+      <h2>Actualización mascotas</h2>
+
+      <label id="pet" for="mascota">Nombres:</label> <br>
+      <input type="text" id="mascota" name="nombre_mascota" value="{{nombre_mascota}}" required>
+
+      <label id="species" for="especie">Especie:</label> <br>
+      <input type="text" id="especie" name="especie" value="{{especie}}" required>
+
+      <label id="race" for="raza">Raza::</label> <br>
+      <input type="text" id="raza" name="raza" value="{{raza}}" required>
+
+      <label id="height" for="altura">Altura:</label> <br>
+      <input type="number" id="altura" name="altura" value="{{altura}}" required>
+
+      <label id="weight" for="peso">Peso:</label> <br>
+      <input type="number" id="peso" name="peso" value="{{peso}}" required>
+
+
+
+      <div id="boton">
+        <button type="submit">Actualizar</button>
+      </div>
+      <div class="cancelar">
+        <button type="submit">Cancelar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+</form>
+{{/each}}
+
+</body>

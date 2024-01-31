@@ -11,7 +11,7 @@ detalle_personaCtl.mandar = async (req, res) => {
     const id =req.id_detalle_persona  //ojo
     const { numero_telefonico } = req.body
     const nuevoEnvio = {
-        umero_telefonico
+        numero_telefonico
     }
     await orm.detalle_persona.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')

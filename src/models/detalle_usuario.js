@@ -5,7 +5,6 @@ const detalle_usuario = (sequelize, type) => {
             primaryKey: true,
             autoIncrement: true
         },
-        nombre_detalle_usuario: type.STRING,
         contactos_emergencia: type.STRING,
         estado: type.STRING,
     

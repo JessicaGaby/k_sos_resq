@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/buses/agregar.css">
+<form action="/detalle_personas/agregar" method="post">
+
+  <body>
+    <div id="container">
+
+      <h2>Detalle Persona</h2>
+
+
+        <label id="numeros_telefonos" for="numeros_telefono">Telefono</label> <br>
+        <input type="number" id="numeros_telefono" name="numero_telefonico" required>
+
+        <br> <br><br>
+        <br> <br>
+      <div class="registrarse">
+        <button (click)="crearRegistro()">Registrar</button>
+      </div>
+      <div class="cancelar">
+        <button (click)="volverRegistro()">Cancelar</button>
+      </div>
+    </div>
+  </body>
+</form>

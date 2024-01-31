@@ -9,9 +9,8 @@ detalle_usuarioCtl.mostrar = (req, res) => {
 //mandar
 detalle_usuarioCtl.mandar = async (req, res) => {
     const id =req.id_detalle_usuario  //ojo
-    const { nombre_detalle_usuario,contactos_emergencia, estado} = req.body
+    const { contactos_emergencia, estado} = req.body
     const nuevoEnvio = {
-        nombre_detalle_usuario,
         contactos_emergencia,
         estado
     }
@@ -34,9 +33,8 @@ detalle_usuarioCtl.traer = async (req, res) => {
 
 detalle_usuarioCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { nombre_detalle_usuario,contactos_emergencia, estado} = req.body
+    const { contactos_emergencia, estado} = req.body
     const nuevoEnvio = {
-        nombre_detalle_usuario,
         contactos_emergencia,
         estado
     }

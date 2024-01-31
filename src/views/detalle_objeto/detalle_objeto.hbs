@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/buses/agregar.css">
+<form action="/detalle_objeto/agregar" method="post">
+
+    <body>
+        <div id="container">
+
+            <h2>Detalle Objeto</h2>
+
+            <label id="date" for="fecha_perdida">Fecha de perdida:</label> <br>
+            <input type="date" id="fecha" name="fecha_perdida" required>
+
+            <label id="hour" for="hora">Hora de pérdida:</label> <br>
+            <input type="time" id="hora" name="hora_perdida" required>
+
+            <label id="location" for="ubicacion">Ubicación de pérdida:</label> <br>
+            <input type="text" id="ubicacion" name="ubicacion_perdida" required>
+
+            <label id="col" for="color">Color:</label> <br>
+            <input type="text" id="color" name="color" required>
+
+
+            <div class="registrarse">
+                <button (click)="crearRegistro()">Registrar</button>
+            </div>
+            <div class="cancelar">
+                <button (click)="volverRegistro()">Cancelar</button>
+            </div>
+        </div>
+    </body>
+</form>

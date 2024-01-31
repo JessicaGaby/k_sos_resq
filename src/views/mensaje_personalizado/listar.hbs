@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/buses/listar.css">
+<form action="mensaje_personalizados/listar/"method="get"></form>
+
+<h1>Listado de los mensajes personalizados</h1>
+<div id="contenedor">
+    
+    <div class="row">
+        {{#each lista}}
+        <div id="tarjeta">
+            <u><h2>Datos del mensaje</h2></u>
+            <div>
+                <p>{{mensaje}}</p>
+            <div>
+            
+            <div>
+                <p>{{descripcion}}</p>
+            <div>
+
+            <div>
+                <p>{{fecha_mensaje}}</p>
+            <div>
+
+
+                <div>
+                    <a href="/mensaje_personalizados/editar/{{id_mensaje_personalizado}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/mensaje_personalizados/editar/{{id_mensaje_personalizado}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

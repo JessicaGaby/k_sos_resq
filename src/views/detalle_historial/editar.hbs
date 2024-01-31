@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/buses/editar.css">
+{{#each lista}}
+<form action="/detalle_historiales/editar/{{id_detalle_historial}}" method="post">
+
+    <body>
+
+
+        <div id="container">
+            <h2>Historial</h2>
+
+            <label id="hora_activaciones" for="hora_activacion">Hora de Activacion:</label> <br>
+            <input type="time" id="hora_activacion" name="hora_activacion"  value="{{hora_activacion}}" required>
+
+            <label id="ubicaciones" for="ubicacion">Ubicacion:</label> <br>
+            <input type="text" id="ubicacion" name="ubicacion"  value="{{ubicacion}}" required>
+
+
+            <br> <br><br>
+            <br> <br>
+
+            <div id="boton">
+                <button type="submit">Actualizar</button>
+            </div>
+            <div class="cancelar">
+                <button type="submit">Cancelar</button>
+            </div>
+        </div>
+        </div>
+        </div>
+</form>
+{{/each}}
+
+</body>

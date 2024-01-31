@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/css/buses/listar.css">
+<form action="detalle_personas/listar/"method="get"></form>
+
+<h1>Listado de Personas </h1>
+<div id="contenedor">
+    
+    <div class="row">
+        {{#each lista}}
+        <div id="tarjeta">
+            <u><h2>Datos de la  Persona</h2></u>
+            <div>
+                <p>{{numero_telefonico}}</p>
+            <div>
+                <div>
+                    <a href="/detalle_persona/editar/{{id_detalle_persona}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/detalle_persona/eliminar/{{id_detalle_persona}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

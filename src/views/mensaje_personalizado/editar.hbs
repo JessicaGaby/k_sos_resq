@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/buses/editar.css">
+{{#each lista}}
+<form action="/mensaje_personalizados/editar/{{id_mensaje_personalizado}}" method="post">
+
+  <body>
+
+   
+    <div id="container">
+      <h2>Actualización del mensaje</h2>
+
+
+      <label id="mensajes" for="mensaje">Mensaje</label> <br>
+      <input type="text" id="mensaje" name="mensaje" value="{{mensaje}}" required>
+
+      <label id="descripciones" for="descripcion">Descripción</label> <br>
+      <input type="text" id="descripcion" name="descripcion" value="{{descripcion}}" required>
+
+      <label id="fecha_mensajes" for="fecha_mensaje">Fecha mensaje</label> <br>
+      <input type="date" id="fecha_mensaje" name="fecha_mensaje" value="{{fecha_mensaje}}" required>
+
+
+      <div id="boton">
+        <button type="submit">Actualizar</button>
+      </div>
+      <div class="cancelar">
+        <button type="submit">Cancelar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+</form>
+{{/each}}
+
+</body>

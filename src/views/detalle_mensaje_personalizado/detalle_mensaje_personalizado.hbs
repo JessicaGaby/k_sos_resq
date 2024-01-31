@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/buses/agregar.css">
+<form action="/detalle_mensaje_personalizados/agregar" method="post">
+
+  <body>
+    <div id="container">
+
+      <h2>Detalle Mensaje Personalizado </h2>
+
+        <label id="telefonos" for="telefono">Telefono</label> <br>
+        <input type="number" id="telefono" name="telefono" required>
+
+        <br> <br><br>
+        <br> <br>
+      <div class="registrarse">
+        <button (click)="crearRegistro()">Registrar</button>
+      </div>
+      <div class="cancelar">
+        <button (click)="volverRegistro()">Cancelar</button>
+      </div>
+    </div>
+  </body>
+</form>

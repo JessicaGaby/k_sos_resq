@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/buses/listar.css">
+<form action="detalle_objeto/listar/"method="get"></form>
+
+<h1>Listado de objetos registradas </h1>
+<div id="contenedor">
+    
+    <div class="row">
+        {{#each lista}}
+        <div id="tarjeta">
+            <u><h2>Datos la Detalle de Objetos</h2></u>
+            <div>
+                <p>{{fecha_perdida}}</p>
+            <div>
+            <div>
+                <p>{{hora_perdida}}</p>
+            <div>
+            <div>
+                <p>{{ubicacion_perdida}}</p>
+            <div>
+            <div>
+                <p>{{color}}</p>
+            <div>
+
+                <div>
+                    <a href="/detalle_objeto/editar/{{id_detalle_objeto}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/detalle_objeto/eliminar/{{id_detalle_mascota}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

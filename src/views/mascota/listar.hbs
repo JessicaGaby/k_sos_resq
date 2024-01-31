@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/css/buses/listar.css">
+<form action="mascota/listar/"method="get"></form>
+
+<h1>Listado mascotas registradas </h1>
+<div id="contenedor">
+    
+    <div class="row">
+        {{#each lista}}
+        <div id="tarjeta">
+            <u><h2>Datos la mascota</h2></u>
+            <div>
+                <p>{{nombre_mascota}}</p>
+            <div>
+            <div>
+                <p>{{especie}}</p>
+            <div>
+            <div>
+                <p>{{raza}}</p>
+            <div>
+            <div>
+                <p>{{altura}}</p>
+            <div>
+            <div>
+                <p>{{peso}}</p>
+            <div>
+
+                <div>
+                    <a href="/mascota/editar/{{id_mascota}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/mascota/eliminar/{{id_mascota}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
