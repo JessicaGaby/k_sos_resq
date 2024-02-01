@@ -7,7 +7,7 @@ const usuario = (sequelize, type) => {
         },
         nombres: type.STRING, 
         apellidos: type.STRING,
-        correo_electronico: type.STRING,
+        correoelectronico: type.STRING,
         contrasena: type.STRING,
         fecha_registro: type.STRING,
         fecha_nacimiento: type.STRING,

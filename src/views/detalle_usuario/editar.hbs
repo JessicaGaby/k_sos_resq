@@ -4,17 +4,19 @@
 
   <body>
 
-   
+
     <div id="container">
       <h2>Actualización de usuarios</h2>
 
       <label id="contact" for="contacto">Contacot de emergencia:</label> <br>
-      <input type="number" id="contacto" name="contacots_emergencia" value="{{contactos_emergencia}}" required>
+      <input type="text" id="contacto" name="contactos_emergencia" value="{{contactos_emergencia}}" required>
 
       <label id="status" for="estado">Estado:</label> <br>
-      <input type="text" id="estado" name="estado" value="{{estado}}" required>
+      <select id="estado" name="estado" value="{{estado}}">
+        <option value="activo">Activo</option>
+        <option value="inactivo">Inactivo</option>
+      </select>
 
-    
 
 
 

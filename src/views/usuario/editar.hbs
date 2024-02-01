@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/buses/editar.css">
+{{#each lista}}
+<form action="/usuario/editar/{{id_usuario}}" method="post">
+
+    <body>
+
+
+        <div id="container">
+            <h2>Actualización del usuario</h2>
+
+            <label id="nombre" for="placa">Nombres</label> <br>
+            <input type="text" id="nombres" name="nombres" value="{{nombres}}" required>
+
+            <label id="apellido" for="placa">Apellidos</label> <br>
+            <input type="text" id="apellidos" name="apellidos" value="{{apellidos}}" required>
+
+            <label id="correo_electronicos" for="placa">Correo Electronico</label> <br>
+            <input type="text" id="correo_electronico" name="correoelectronico" value="{{correoelectronico}}" required>
+
+            <label id="contrasena" for="placa">Contraseña:</label> <br>
+            <input type="text" id="contrasenas" name="contrasenas" value="{{contrasena}}" required>
+
+            
+            <label id="fecha" for="placa">fecha de Registro:</label> <br>
+            <input type="text" id="fechas" name="fechas" value="{{fecha_registro}}" required>
+
+            
+            <label id="nacimiento" for="placa">Fecha de nacimiento:</label> <br>
+            <input type="text" id="nacimientos" name="nacimientos" value="{{fecha_nacimiento}}" required>
+
+            <br> <br><br>
+            <br> <br>
+
+            <div id="boton">
+                <button type="submit">Actualizar</button>
+            </div>
+            <div class="cancelar">
+                <button type="submit">Cancelar</button>
+            </div>
+        </div>
+        </div>
+        </div>
+</form>
+{{/each}}
+
+</body>

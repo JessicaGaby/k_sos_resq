@@ -3,7 +3,7 @@ const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
 historial_activacionCtl.mostrar = (req, res) => {
-    res.render('historial_activaciones/agregar');
+    res.render('historial_activacion/agregar');
 }
 
 //mandar
@@ -15,7 +15,7 @@ historial_activacionCtl.mandar = async (req, res) => {
     }
     await orm.historial_activacion.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/historial_activaciones/listar/')
+    res.redirect('/historial_activacion/listar/')
 }
 
 historial_activacionCtl.listar = async (req, res) => {
@@ -27,7 +27,7 @@ historial_activacionCtl.listar = async (req, res) => {
 historial_activacionCtl.traer = async (req, res) => {
     const ids = req.params.id
     const lista = await sql.query('select * from historial_activaciones where id_historial_activacion =?', [ids])
-    res.render('historial_activaciones/editar', { lista })
+    res.render('historial_activacion/editar', { lista })
 }
 
 historial_activacionCtl.actualizar = async (req, res) => {
@@ -41,14 +41,14 @@ historial_activacionCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/historial_activaciones/listar/');
+    res.redirect('/historial_activacion/listar/');
 }
 historial_activacionCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     await orm.historial_activacion.destroy({ where: { id_historial_activacion: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/historial_activaciones/listar/');
+            res.redirect('/historial_activacion/listar/');
         })
 }
 

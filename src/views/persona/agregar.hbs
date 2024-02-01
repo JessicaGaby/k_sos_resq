@@ -1,3 +1,4 @@
+{{!-- Funcional --}}
 <link rel="stylesheet" href="/css/buses/agregar.css">
 <form action="/persona/agregar" method="post">
 
@@ -6,31 +7,31 @@
 
             <h2>Personas</h2>
 
-            <label id="nombre" for="placa">Nombres</label> <br>
+            <label id="nombre" for="nombres">Nombres</label> <br>
             <input type="text" id="nombres" name="nombres" required>
 
-            <label id="apellido" for="placa">Apellidos</label> <br>
+            <label id="apellido" for="apellidos">Apellidos</label> <br>
             <input type="text" id="apellidos" name="apellidos" required>
 
-            <label id="fecha_nacimientos" for="placa">Fecha Nacimiento</label> <br>
+            <label id="fecha_nacimientos" for="fecha_nacimiento">Fecha Nacimiento</label> <br>
             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
 
-            <label id="sexs" for="placa">Sexo</label> <br>
+            <label id="sexs" for="sex">Sexo</label> <br>
             <input type="text" id="sex" name="sex" required>
 
-            <label id="direcciones" for="placa">Direccion</label> <br>
+            <label id="direcciones" for="direccion">Direccion</label> <br>
             <input type="text" id="direccion" name="direccion" required>
 
-            <label id="correo_electronicos" for="placa">Correo Electronico</label> <br>
+            <label id="correo_electronicos" for="orreo_persona">Correo Electronico</label> <br>
             <input type="text" id="correo_persona" name="correo_persona" required>
 
             <br> <br><br>
             <br> <br>
-            <div class="registrarse">
-                <button (click)="crearRegistro()">Registrar</button>
-            </div>
-            <div class="cancelar">
+             <div id="boton">
             <button type="submit" id="">Guardar</button>
+            </div>
+             <div id="boton">
+            <button type="submit" id="">Cancelar</button>
             </div>
         </div>
     </body>

@@ -3,7 +3,7 @@ const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
 mensaje_personalizadoCtl.mostrar = (req, res) => {
-    res.render('mensaje_personalizados/agregar');
+    res.render('mensaje_personalizado/agregar');
 }
 
 //mandar
@@ -17,7 +17,7 @@ mensaje_personalizadoCtl.mandar = async (req, res) => {
     }
     await orm.mensaje_personalizado.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/mensaje_personalizados/listar/')
+    res.redirect('/mensaje_personalizado/listar/')
 }
 
 mensaje_personalizadoCtl.listar = async (req, res) => {
@@ -29,7 +29,7 @@ mensaje_personalizadoCtl.listar = async (req, res) => {
 mensaje_personalizadoCtl.traer = async (req, res) => {
     const ids = req.params.id
     const lista = await sql.query('select * from mensaje_personalizados where id_mensaje_personalizado =?', [ids])
-    res.render('mensaje_personalizados/editar', { lista })
+    res.render('mensaje_personalizado/editar', { lista })
 }
 
 mensaje_personalizadoCtl.actualizar = async (req, res) => {
@@ -45,14 +45,14 @@ mensaje_personalizadoCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/mensaje_personalizados/listar/');
+    res.redirect('/mensaje_personalizado/listar/');
 }
 mensaje_personalizadoCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     await orm.mensaje_personalizado.destroy({ where: { id_mensaje_personalizado: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/mensaje_personalizados/listar/');
+            res.redirect('/mensaje_personalizado/listar/');
         })
 }
 

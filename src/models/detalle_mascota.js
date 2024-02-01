@@ -7,7 +7,7 @@ const detalle_mascota = (sequelize, type) => {
         },
         numero_telefonico: type.STRING,
         medicamentos: type.STRING,
-        direccion: type.STRING,
+        direccion_mascota: type.STRING,
         fecha_vacuna: type.STRING,
         nombre_propietario: type.STRING,
     

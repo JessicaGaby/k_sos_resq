@@ -3,7 +3,7 @@ const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
 detalle_familiarCtl.mostrar = (req, res) => {
-    res.render('detalle_familiares/agregar');
+    res.render('detalle_familiar/agregar');
 }
 
 //mandar
@@ -15,7 +15,7 @@ detalle_familiarCtl.mandar = async (req, res) => {
     }
     await orm.detalle_familiar.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/detalle_familiares/listar/')
+    res.redirect('/detalle_familiar/listar/')
 }
 
 detalle_familiarCtl.listar = async (req, res) => {
@@ -27,7 +27,7 @@ detalle_familiarCtl.listar = async (req, res) => {
 detalle_familiarCtl.traer = async (req, res) => {
     const ids = req.params.id
     const lista = await sql.query('select * from detalle_familiares where id_detalle_familiar =?', [ids])
-    res.render('detalle_familiares/editar', { lista })
+    res.render('detalle_familiar/editar', { lista })
 }
 
 detalle_familiarCtl.actualizar = async (req, res) => {
@@ -41,14 +41,14 @@ detalle_familiarCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/detalle_familiares/listar/');
+    res.redirect('/detalle_familiar/listar/');
 }
 detalle_familiarCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     await orm.detalle_familiar.destroy({ where: { id_detalle_familiar: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/detalle_familiares/listar/');
+            res.redirect('/detalle_familiar/listar/');
         })
 }
 

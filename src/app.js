@@ -88,11 +88,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./router/inicio.router'))
 app.use('/objeto',require('./router/objeto.router'))
-
-//app.use(require('./router/registro_familiar.router'))
 app.use('/registro_familiar', require('./router/registro_familiar.router'))
 app.use('/persona', require('./router/persona.router'))
-
+app.use('/mensaje_personalizado', require('./router/mensaje_personalizado.router'))
+app.use('/detalle_usuario', require('./router/detalle_usuario.router'))
+app.use('/mascota', require('./router/mascota.router'))
+app.use('/detalle_persona', require('./router/detalle_persona.router'))
+app.use('/detalle_objeto', require('./router/detalle_objeto.router'))
+app.use('/detalle_mascota', require('./router/detalle_mascota.router'))
+app.use('/detalle_familiar', require('./router/detalle_familiar.router'))
+app.use('/usuario', require('./router/usuario.router'))
 
 // Exportar la aplicación
 module.exports = app;

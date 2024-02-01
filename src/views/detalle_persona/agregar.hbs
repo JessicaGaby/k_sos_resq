@@ -1,5 +1,6 @@
+{{!-- Funcional --}}
 <link rel="stylesheet" href="/css/buses/agregar.css">
-<form action="/detalle_personas/agregar" method="post">
+<form action="/detalle_persona/agregar" method="post">
 
   <body>
     <div id="container">
@@ -7,16 +8,16 @@
       <h2>Detalle Persona</h2>
 
 
-        <label id="numeros_telefonos" for="numeros_telefono">Telefono</label> <br>
-        <input type="number" id="numeros_telefono" name="numero_telefonico" required>
+      <label id="numero_persona" for="numero_persona">Telefono</label> <br>
+      <input type="number" id="numero_persona" name="numero_persona" required>
 
-        <br> <br><br>
-        <br> <br>
-      <div class="registrarse">
-        <button (click)="crearRegistro()">Registrar</button>
+      <br> <br><br>
+      <br> <br>
+      <div id="boton">
+        <button type="submit" id="">Guardar</button>
       </div>
-      <div class="cancelar">
-        <button (click)="volverRegistro()">Cancelar</button>
+      <div id="boton">
+        <button type="submit" id="">Cancelar</button>
       </div>
     </div>
   </body>

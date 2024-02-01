@@ -3,17 +3,17 @@ const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
 usuarioCtl.mostrar = (req, res) => {
-    res.render('usuarios/agregar');
+    res.render('usuario/agregar');
 }
 
 //mandar
 usuarioCtl.mandar = async (req, res) => {
     const id =req.id_usuario  //ojo
-    const { nombres,apellidos,correo_electronico,contrasena,fecha_registro,fecha_nacimiento } = req.body
+    const { nombres,apellidos,correoelectronico,contrasena,fecha_registro,fecha_nacimiento } = req.body
     const nuevoEnvio = {
         nombres,
         apellidos,
-        correo_electronico,
+        correoelectronico,
         contrasena,
         fecha_registro,
         fecha_nacimiento,
@@ -21,7 +21,7 @@ usuarioCtl.mandar = async (req, res) => {
     }
     await orm.usuario.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/usuarios/listar/')
+    res.redirect('/usuario/listar/')
 }
 
 usuarioCtl.listar = async (req, res) => {
@@ -33,16 +33,16 @@ usuarioCtl.listar = async (req, res) => {
 usuarioCtl.traer = async (req, res) => {
     const ids = req.params.id
     const lista = await sql.query('select * from usuarios where id_usuario =?', [ids])
-    res.render('usuarios/editar', { lista })
+    res.render('usuario/editar', { lista })
 }
 
 usuarioCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { nombres,apellidos,correo_electronico,contrasena,fecha_registro,fecha_nacimiento } = req.body
+    const { nombres,apellidos,correoelectronico,contrasena,fecha_registro,fecha_nacimiento } = req.body
     const nuevoEnvio = {
         nombres,
         apellidos,
-        correo_electronico,
+        correoelectronico,
         contrasena,
         fecha_registro,
         fecha_nacimiento
@@ -52,14 +52,14 @@ usuarioCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/usuarios/listar/');
+    res.redirect('/usuario/listar/');
 }
 usuarioCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     await orm.usuario.destroy({ where: { id_usuario: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/usuarios/listar/');
+            res.redirect('/usuario/listar/');
         })
 }
 

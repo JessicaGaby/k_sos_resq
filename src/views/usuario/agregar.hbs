@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="/css/buses/agregar.css">
+<form action="/usuario/agregar" method="post">
+<body>
+    <div id="container">
+        <h2>Registro</h2>
+
+        <label id="nombre" for="placa">Nombres</label> <br>
+        <input type="text" id="nombres" name="nombres" required>
+
+        <label id="apellido" for="placa">Apellidos</label> <br>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label id="correo" for="placa">Correo eléctronico:</label> <br>
+        <input type="text" id="correos" name="correoelectronico" required>
+
+        <label id="contrasena" for="placa">Contraseña:</label> <br>
+        <input type="password" id="contrasenas" name="contrasena" required>
+
+        <label id="fecha" for="placa">Fecha de registro:</label> <br>
+        <input type="date" id="fechas" name="fecha_registro" required>
+
+        <label id="nacimiento" for="placa">Fecha de nacimiento:</label> <br>
+        <input type="date" id="nacimientos" name="fecha_nacimiento" required>
+
+        <br> <br><br>
+        <br> <br>
+        
+                <div id="boton">
+            <!-- Utilizar un enlace con href en lugar de un select -->
+            <label for="redireccion">Selecciona una opción:</label>
+            <select id="redireccionSelect" onchange="redirigirPagina()">
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="/objeto/agregar">Agregar Objeto</option>
+                <option value="/pagina1">Página 1</option>
+                <option value="/pagina2">Página 2</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+        </div>
+
+        <div id="boton">
+            <!-- Mantener un enlace de cancelar -->
+            <a href="#" onclick="cancelar()">Cancelar</a>
+        </div>
+    </div>
+
+    <script>
+        function redirigirPagina() {
+            var seleccion = document.getElementById("redireccionSelect").value;
+            if (seleccion !== "") {
+                window.location.href = seleccion;
+            }
+        }
+
+        function cancelar() {
+            alert("Operación cancelada");
+        }
+    </script>
+</body>
+
+</form>

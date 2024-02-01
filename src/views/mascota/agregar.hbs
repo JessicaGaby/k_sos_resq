@@ -1,3 +1,4 @@
+{{!-- Funcional --}}
 <link rel="stylesheet" href="/css/buses/agregar.css">
 <form action="/mascota/agregar" method="post">
 
@@ -16,16 +17,16 @@
             <input type="text" id="raza" name="raza" required>
 
             <label id="height" for="altura">Altura:</label> <br>
-            <input type="number" id="altura" name="altura" required>
+            <input type="text" id="altura" name="altura" required>
 
             <label id="weight" for="peso">Peso:</label> <br>
-            <input type="number" id="peso" name="peso" required>
+            <input type="text" id="peso" name="peso" required>
 
             <div class="registrarse">
-                <button (click)="crearRegistro()">Registrar</button>
+                <button type="submit" id="">Registrar</button>
             </div>
             <div class="cancelar">
-                <button (click)="volverRegistro()">Cancelar</button>
+           <button type="submit" id="">Guardar</button>
             </div>
         </div>
     </body>

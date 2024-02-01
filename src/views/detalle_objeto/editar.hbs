@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/buses/editar.css">
 {{#each lista}}
-<form action="/detalle_objeto/editar/{{id_mascota}}" method="post">
+<form action="/detalle_objeto/editar/{{id_detalle_objeto}}" method="post">
 
   <body>
 
@@ -15,7 +15,7 @@
       <input type="time" id="hora" name="hora_perdida" value="{{hora_perdida}}" required>
 
       <label id="location" for="ubicacion">Ubicación de pérdida:</label> <br>
-      <input type="text" id="ubicacion" name="ubicacion_perdida" value="{{ubicacion_perdida}}" required>
+      <input type="text" id="ubicacion_perdida" name="ubicacion_perdida" value="{{ubicacion_perdida}}" required>
 
       <label id="col" for="color">Color:</label> <br>
       <input type="text" id="color" name="color" value="{{color}}" required>

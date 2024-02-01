@@ -1,19 +1,20 @@
+{{!-- Funcional --}}
 <link rel="stylesheet" href="/css/buses/agregar.css">
-<form action="/mascota/agregar" method="post">
+<form action="/detalle_mascota/agregar" method="post">
 
     <body>
         <div id="container">
 
-            <h2>Mascotas</h2>
+            <h2>Detalle Mascotas</h2>
 
-            <label id="number" for="numero">Numero de telefono:</label> <br>
-            <input type="number" id="numero" name="numero_telefonico" required>
+            <label id="numero_telefonico" for="numero">Numero de telefono:</label> <br>
+            <input type="text" id="numero" name="numero_telefonico" required>
 
             <label id="medicines" for="medicinas">Medicamentos:</label> <br>
             <input type="text" id="medicinas" name="medicamentos" required>
 
-            <label id="address" for="direccion">Dirección:</label> <br>
-            <input type="text" id="direccion" name="direccion" required>
+            <label id="direccion_mascota" for="direccion_mascota">Dirección:</label> <br>
+            <input type="text" id="direccion_mascota" name="direccion_mascota" required>
 
             <label id="date" for="fecha">Fecha de vacuna:</label> <br>
             <input type="date" id="fecha" name="fecha_vacuna" required>
@@ -22,10 +23,10 @@
             <input type="text" id="nombre" name="nombre_propietario" required>
 
             <div class="registrarse">
-                <button (click)="crearRegistro()">Registrar</button>
+                <button type="submit" id="">Registrar</button>
             </div>
             <div class="cancelar">
-                <button (click)="volverRegistro()">Cancelar</button>
+                <button type="submit" id="">Guardar</button>
             </div>
         </div>
     </body>

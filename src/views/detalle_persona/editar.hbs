@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/buses/editar.css">
 {{#each lista}}
-<form action="/detalle_personas/editar/{{id_detalle_persona}}" method="post">
+<form action="/detalle_persona/editar/{{id_detalle_persona}}" method="post">
 
   <body>
 
@@ -9,8 +9,8 @@
       <h2>Actualización de Personas</h2>
 
       
-      <label id="numeros_telefonos" for="numeros_telefono">Telefono</label> <br>
-      <input type="number" id="numeros_telefono" name="numero_telefonico" value="{{numero_telefonico}}"  required>
+      <label id="numeros_telefonos" for="numeros_persona">Telefono</label> <br>
+      <input type="number" id="numeros_telefono" name="numero_persona" value="{{numero_persona}}"  required>
 
 
       <div id="boton">

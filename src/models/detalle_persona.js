@@ -1,11 +1,11 @@
 const detalle_persona = (sequelize, type) => {
-    return sequelize.define('detalles_personas', {
+    return sequelize.define('detalle_personas', {
         id_detalle_persona: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        numero_telefonico: type.STRING,
+        numero_persona: type.STRING,
     
 
         creardetalle_persona:{

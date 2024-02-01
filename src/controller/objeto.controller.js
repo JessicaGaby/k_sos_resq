@@ -9,12 +9,12 @@ objetoCtl.mostrar = (req, res) => {
 //mandar
 objetoCtl.mandar = async (req, res) => {
     const id =req.id_objeto  //ojo
-    const { marca,modelo,numero_serie,numero_de_contacto,correo_objeto } = req.body
+    const { marca,modelo,numero_serie,numero_contacto,correo_objeto } = req.body
     const nuevoEnvio = {
         marca,
         modelo,
         numero_serie,
-        numero_de_contacto,
+        numero_contacto,
         correo_objeto
     }
     await orm.objeto.create(nuevoEnvio)
@@ -36,12 +36,12 @@ objetoCtl.traer = async (req, res) => {
 
 objetoCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { marca,modelo,numero_serie,numero_de_contacto,correo_objeto } = req.body
+    const { marca,modelo,numero_serie,numero_contacto,correo_objeto } = req.body
     const nuevoEnvio = {
         marca,
         modelo,
         numero_serie,
-        numero_de_contacto,
+        numero_contacto,
         correo_objeto
     }
     await orm.objeto.findOne({ where: { id_objeto: ids } })

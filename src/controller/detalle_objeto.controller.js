@@ -3,7 +3,7 @@ const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
 detalle_objetoCtl.mostrar = (req, res) => {
-    res.render('detalle_objetos/agregar');
+    res.render('detalle_objeto/agregar');
 }
 
 //mandar
@@ -18,7 +18,7 @@ detalle_objetoCtl.mandar = async (req, res) => {
     }
     await orm.detalle_objeto.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/detalle_objetos/listar/')
+    res.redirect('/detalle_objeto/listar/')
 }
 
 detalle_objetoCtl.listar = async (req, res) => {
@@ -30,7 +30,7 @@ detalle_objetoCtl.listar = async (req, res) => {
 detalle_objetoCtl.traer = async (req, res) => {
     const ids = req.params.id
     const lista = await sql.query('select * from detalle_objetos where id_detalle_objeto =?', [ids])
-    res.render('detalle_objetos/editar', { lista })
+    res.render('detalle_objeto/editar', { lista })
 }
 
 detalle_objetoCtl.actualizar = async (req, res) => {
@@ -47,14 +47,14 @@ detalle_objetoCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/detalle_objetos/listar/');
+    res.redirect('/detalle_objeto/listar/');
 }
 detalle_objetoCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     await orm.detalle_objeto.destroy({ where: { id_detalle_objeto: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/detalle_objetos/listar/');
+            res.redirect('/detalle_objeto/listar/');
         })
 }
 

@@ -1,27 +1,28 @@
+{{!-- Funcional --}}
 <link rel="stylesheet" href="/css/buses/agregar.css">
-<form action="/mensaje_personalizados/agregar" method="post">
+<form action="/mensaje_personalizado/agregar" method="post">
 
   <body>
     <div id="container">
 
       <h2>Mensaje Personalizado</h2>
 
-        <label id="mensajes" for="mensaje">Mensaje</label> <br>
-        <input type="text" id="mensaje" name="mensaje" required>
+      <label id="mensajes" for="mensaje">Mensaje</label> <br>
+      <input type="text" id="mensaje" name="mensaje" required>
 
-        <label id="descripciones" for="descripcion">Descripción</label> <br>
-        <input type="text" id="descripcion" name="descripcion" required>
+      <label id="descripciones" for="descripcion">Descripción</label> <br>
+      <input type="text" id="descripcion" name="descripcion" required>
 
-        <label id="fecha_mensajes" for="fecha_mensaje">Fecha mensaje</label> <br>
-        <input type="date" id="fecha_mensaje" name="fecha_mensaje" required>
+      <label id="fecha_mensajes" for="fecha_mensaje">Fecha mensaje</label> <br>
+      <input type="date" id="fecha_mensaje" name="fecha_mensaje" required>
 
-        <br> <br><br>
-        <br> <br>
+      <br> <br><br>
+      <br> <br>
       <div class="registrarse">
-        <button (click)="crearRegistro()">Registrar</button>
+        <button type="submit" id="">Registrar</button>
       </div>
       <div class="cancelar">
-        <button (click)="volverRegistro()">Cancelar</button>
+        <button type="submit" id="">Guardar</button>
       </div>
     </div>
   </body>
