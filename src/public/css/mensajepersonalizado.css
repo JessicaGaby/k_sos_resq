@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -519px;
+    
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    
+  }
+
+ .ancho, input{
+    height: 100xpx;
+ } 
+
+  button {
+    width:100px;
+    padding: 10px;
+    background-color: #109CF1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: -150px;
+  }
+
+  button:hover {
+    background-color: #109CF1;
+  }
+
+.cancelar{
+    padding: 15px;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+.registrarse{
+    margin-left: 55px;
+}
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+
+  nav {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .textos {
+    color: #109cf1;
+    font-size: 24px;
+  }
+  
+  
+  .user-info {
+    margin-bottom: 20px;
+  }
+  
+  .user-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .user-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .menu-item:hover {
+    color: #109cf1;
+  }
+
+.menu-item.active {
+    background-color: white;
+}
