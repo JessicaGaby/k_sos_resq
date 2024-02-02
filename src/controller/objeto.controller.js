@@ -9,13 +9,18 @@ objetoCtl.mostrar = (req, res) => {
 //mandar
 objetoCtl.mandar = async (req, res) => {
     const id =req.id_objeto  //ojo
-    const { marca,modelo,numero_serie,numero_contacto,correo_objeto } = req.body
+    const { marca,modelo,numero_serie,numero_contacto,correo_objeto, fecha_perdida,hora_perdida,ubicacion_perdida,color } = req.body
     const nuevoEnvio = {
         marca,
         modelo,
         numero_serie,
         numero_contacto,
-        correo_objeto
+        correo_objeto,
+        //detalle
+        fecha_perdida,
+        hora_perdida,
+        ubicacion_perdida,
+        color
     }
     await orm.objeto.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
@@ -36,13 +41,19 @@ objetoCtl.traer = async (req, res) => {
 
 objetoCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { marca,modelo,numero_serie,numero_contacto,correo_objeto } = req.body
+    const { marca,modelo,numero_serie,numero_contacto,correo_objeto, fecha_perdida,hora_perdida,ubicacion_perdida,color } = req.body
     const nuevoEnvio = {
         marca,
         modelo,
         numero_serie,
         numero_contacto,
-        correo_objeto
+        correo_objeto,
+        //detalle
+        fecha_perdida,
+        hora_perdida,
+        ubicacion_perdida,
+        color
+
     }
     await orm.objeto.findOne({ where: { id_objeto: ids } })
         .then(actualizar => {

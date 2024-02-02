@@ -9,13 +9,19 @@ mascotaCtl.mostrar = (req, res) => {
 //mandar
 mascotaCtl.mandar = async (req, res) => {
     const id =req.id_mascota  //ojo
-    const { nombre_mascota,especie,raza,altura,peso } = req.body
+    const { nombre_mascota,especie,raza,altura,peso,numero_telefonico,medicamentos,direccion_mascota,fecha_vacuna,nombre_propietario } = req.body
     const nuevoEnvio = {
         nombre_mascota,
         especie,
         raza,
         altura,
-        peso
+        peso,
+        //detalle
+        numero_telefonico,
+        medicamentos,
+        direccion_mascota,
+        fecha_vacuna,
+        nombre_propietario
     }
     await orm.mascota.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
@@ -36,13 +42,19 @@ mascotaCtl.traer = async (req, res) => {
 
 mascotaCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { nombre_mascota,especie,raza,altura,peso } = req.body
+    const { nombre_mascota,especie,raza,altura,peso,numero_telefonico,medicamentos,direccion_mascota,fecha_vacuna,nombre_propietario } = req.body
     const nuevoEnvio = {
         nombre_mascota,
         especie,
         raza,
         altura,
-        peso
+        peso,
+        //detalle
+        numero_telefonico,
+        medicamentos,
+        direccion_mascota,
+        fecha_vacuna,
+        nombre_propietario
     }
     await orm.mascota.findOne({ where: { id_mascota: ids } })
         .then(actualizar => {

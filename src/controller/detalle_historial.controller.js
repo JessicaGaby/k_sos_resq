@@ -1,4 +1,4 @@
-const detalle_historialCtl = {}
+/*const detalle_historialCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
@@ -55,4 +55,4 @@ detalle_historialCtl.eliminar = async (req, res) => {
 }
 
 
-module.exports = detalle_historialCtl
+module.exports = detalle_historialCtl*/

@@ -1,4 +1,4 @@
-const detalle_familiar = (sequelize, type) => {
+/*const detalle_familiar = (sequelize, type) => {
     return sequelize.define('detalle_familiares', {
         id_detalle_familiar: {
             type: type.INTEGER,
@@ -22,4 +22,4 @@ const detalle_familiar = (sequelize, type) => {
         timestamps: false,
     });
 }
-module.exports = detalle_familiar
+module.exports = detalle_familiar*/

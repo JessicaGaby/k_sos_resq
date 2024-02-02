@@ -9,9 +9,12 @@ historial_activacionCtl.mostrar = (req, res) => {
 //mandar
 historial_activacionCtl.mandar = async (req, res) => {
     const id =req.id_historial_activacion  //ojo
-    const { fecha_activacion } = req.body
+    const { fecha_activacion, hora_activacion, ubicacion } = req.body
     const nuevoEnvio = {
-        fecha_activacion
+        fecha_activacion,
+        //detalle
+        hora_activacion, 
+        ubicacion
     }
     await orm.historial_activacion.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
@@ -32,9 +35,12 @@ historial_activacionCtl.traer = async (req, res) => {
 
 historial_activacionCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { fecha_activacion } = req.body
+    const { fecha_activacion, hora_activacion, ubicacion } = req.body
     const nuevoEnvio = {
-        fecha_activacion
+        fecha_activacion,
+        //detalle
+        hora_activacion, 
+        ubicacion
     }
     await orm.historial_activacion.findOne({ where: { id_historial_activacion: ids } })
         .then(actualizar => {

@@ -1,32 +1,40 @@
 {{!-- Funcional --}}
-<link rel="stylesheet" href="/css/buses/agregar.css">
+<link rel="stylesheet" href="/css/agregarmascota.css">
 <form action="/mascota/agregar" method="post">
 
     <body>
-        <div id="container">
+        <img src="/img/image6.png" class="img3">
+        <h1>REGISTRO MASCOTAS</h1>
+        <div class="content">
+             <div class="form-container">
 
             <h2>Mascotas</h2>
-
-            <label id="pet" for="mascota">Nombres:</label> <br>
-            <input type="text" id="mascota" name="nombre_mascota" required>
-
+           
+            <label id="pet" for="mascota">Nombre del Animal:</label> <br>
+            <input class="form-control" type="text" id="mascota" name="nombre_mascota" placeholder="Nombre del Animal" required>
+            
             <label id="species" for="especie">Especie:</label> <br>
-            <input type="text" id="especie" name="especie" required>
-
-            <label id="race" for="raza">Raza::</label> <br>
-            <input type="text" id="raza" name="raza" required>
-
+            <input class="form-control" type="text" id="especie" name="especie"placeholder="Especie" required>
+           
+            
+            <label id="race" for="raza">Raza:</label> <br>
+            <input class="form-control" type="text" id="raza" name="raza" placeholder="Raza" required>
+            
+            
             <label id="height" for="altura">Altura:</label> <br>
-            <input type="text" id="altura" name="altura" required>
-
+            <input class="form-control" type="text" id="altura" name="altura" placeholder="Altura" required>
+            
+           
             <label id="weight" for="peso">Peso:</label> <br>
-            <input type="text" id="peso" name="peso" required>
+            <input class="form-control" type="text" id="peso" name="peso" placeholder="Peso" required>
+            
 
-            <div class="registrarse">
+            <div class="login">
                 <button type="submit" id="">Registrar</button>
             </div>
-            <div class="cancelar">
+            <div class="atras">
            <button type="submit" id="">Guardar</button>
+            </div>
             </div>
         </div>
     </body>

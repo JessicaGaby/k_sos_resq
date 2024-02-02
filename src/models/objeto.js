@@ -10,6 +10,11 @@ const objeto = (sequelize, type) => {
         numero_serie: type.STRING,
         numero_contacto: type.STRING,
         correo_objeto:type.STRING,
+        //detalle
+        fecha_perdida: type.STRING,
+        hora_perdida: type.STRING,
+        ubicacion_perdida: type.STRING,
+        color: type.STRING,
 
     
 

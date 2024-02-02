@@ -6,7 +6,9 @@ const historial_activacion = (sequelize, type) => {
             autoIncrement: true
         },
         fecha_activacion: type.STRING,
-        
+        //detalle
+        hora_activacion: type.STRING,
+        ubicacion: type.STRING,
     
 
         crearHistorial_activacion:{

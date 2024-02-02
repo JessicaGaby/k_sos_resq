@@ -9,11 +9,13 @@ registro_familiarCtl.mostrar = (req, res) => {
 //mandar
 registro_familiarCtl.mandar = async (req, res) => {
     const id =req.id_registro_familiar  //ojo
-    const { nombres, apellidos, correo_electronico } = req.body
+    const { nombres, apellidos, correo_electronico,telefono } = req.body
     const nuevoEnvio = {
         nombres,
         apellidos,
-        correo_electronico
+        correo_electronico,
+        //detalle
+        telefono
  
     }
     await orm.registro_familiar.create(nuevoEnvio)
@@ -35,11 +37,13 @@ registro_familiarCtl.traer = async (req, res) => {
 
 registro_familiarCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { nombres, apellidos, correo_electronico } = req.body
+    const { nombres, apellidos, correo_electronico,telefono } = req.body
     const nuevoEnvio = {
         nombres,
         apellidos,
-        correo_electronico
+        correo_electronico,
+        //detalle
+        telefono
     }
     await orm.registro_familiar.findOne({ where: { id_registro_familiar: ids } })
         .then(actualizar => {

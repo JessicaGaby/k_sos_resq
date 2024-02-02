@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
 
 const router = express.Router();
@@ -12,4 +12,4 @@ router.get('/editar/:id',isLoggedIn,traer)
 router.post('/editar/:id',isLoggedIn,actualizar)
 router.get('/eliminar/:id',isLoggedIn,eliminar)
 
-module.exports = router;
+module.exports = router;*/

@@ -1,36 +1,40 @@
 {{!-- Funcional --}}
-<link rel="stylesheet" href="/css/buses/agregar.css">
+<link rel="stylesheet" href="/css/agregarobjeto.css">
 <form action="/objeto/agregar" method="post">
 
     <body>
-        <div id="container">
-
-            <h2>Detalle Familiar</h2>
-
+        <img src="/img/image5.png" class="img3">
+    <h1>REGISTRO DE OBJETOS</h1>
+    <div class="content">
+        <div class="form-container">
+        
+            <div class="mb-3">
             <label id="marcas" for="marca">Marca</label> <br>
-            <input type="text" id="marca" name="marca" required>
+            <input type="text" class="form-control" id="marca" name="marca" placeholder="Marca del Dispositivo" required>
 
             <label id="modelo" for="modelo">Modelo</label> <br>
-            <input type="text" id="modelo" name="modelo" required>
+            <input type="text" class="form-control" id="modelo" name="modelo"placeholder="Modelo del Dispositivo" required>
 
 
             <label id="numero_series" for="numero_serie">Numero de Serie</label> <br>
-            <input type="text" id="numero_serie" name="numero_serie" required>
+            <input type="text" class="form-control" id="numero_serie" name="numero_serie" placeholder="Número de serie" required>
 
             <label id="numero_contacto" for="numero_contacto">Numero de Contacto</label> <br>
-            <input type="text" id="numero_contacto" name="numero_contacto" required>
+            <input type="text" class="form-control" id="numero_contacto" name="numero_contacto" placeholder="Número de contacto" required>
 
             <label id="correo_electronico" for="correo_objeto">Correo Electronico</label> <br>
-            <input type="text" id="correo_electronico" name="correo_objeto" required>
+            <input type="text" class="form-control" id="correo_electronico" name="correo_objeto" placeholder="Correo electrónico" required>
 
             <br> <br><br>
             <br> <br>
-            <div class="registrarse">
+            
+            <div class="login">
                 <button type="submit" id="">Registrar</button>
             </div>
-            <div class="cancelar">
+            <div class="atras">
            <button type="submit" id="">Guardar</button>
             </div>
+           </div>
         </div>
     </body>
 </form>

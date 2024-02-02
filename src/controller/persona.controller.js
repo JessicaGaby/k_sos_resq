@@ -9,14 +9,16 @@ personaCtl.mostrar = (req, res) => {
 //mandar
 personaCtl.mandar = async (req, res) => {
     const id =req.id_persona  //ojo
-    const { nombres, apellidos,fecha_nacimiento, sex, direccion, correo_persona } = req.body
+    const { nombres, apellidos,fecha_nacimiento, sex, direccion, correo_persona, numero_persona } = req.body
     const nuevoEnvio = {
         nombres, 
         apellidos,
         fecha_nacimiento, 
         sex, 
         direccion, 
-        correo_persona
+        correo_persona,
+        //detalle
+        numero_persona
     }
     await orm.persona.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
@@ -37,14 +39,16 @@ personaCtl.traer = async (req, res) => {
 
 personaCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { nombres, apellidos,fecha_nacimiento, sex, direccion, correo_persona } = req.body
+    const { nombres, apellidos,fecha_nacimiento, sex, direccion, correo_persona, numero_persona } = req.body
     const nuevoEnvio = {
         nombres, 
         apellidos,
         fecha_nacimiento, 
         sex, 
         direccion, 
-        correo_persona
+        correo_persona,
+        //detalle
+        numero_persona
     }
     await orm.persona.findOne({ where: { id_persona: ids } })
         .then(actualizar => {

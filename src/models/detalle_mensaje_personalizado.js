@@ -1,4 +1,4 @@
-const detalle_mensaje_personalizado = (sequelize, type) => {
+ /* const detalle_mensaje_personalizado = (sequelize, type) => {
     return sequelize.define('detalle_mensaje_personalizados', {
         id_detalle_mensaje_personalizado: {
             type: type.INTEGER,
@@ -21,4 +21,4 @@ const detalle_mensaje_personalizado = (sequelize, type) => {
         timestamps: false,
     });
 }
-module.exports = detalle_mensaje_personalizado
+module.exports = detalle_mensaje_personalizado */

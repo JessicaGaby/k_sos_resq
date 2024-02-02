@@ -8,7 +8,9 @@ const mensaje_personalizado = (sequelize, type) => {
         mensaje: type.STRING,
         descripcion: type.STRING,
         fecha_mensaje: type.STRING,
-    
+        //detalle 
+        hora_mensaje: type.STRING,
+        
         crearMensaje_personalizado:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),

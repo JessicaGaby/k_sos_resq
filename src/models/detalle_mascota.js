@@ -1,4 +1,4 @@
-const detalle_mascota = (sequelize, type) => {
+/*const detalle_mascota = (sequelize, type) => {
     return sequelize.define('detalle_mascotas', {
         id_detalle_mascota: {
             type: type.INTEGER,
@@ -26,4 +26,4 @@ const detalle_mascota = (sequelize, type) => {
         timestamps: false,
     });
 }
-module.exports = detalle_mascota
+module.exports = detalle_mascota*/

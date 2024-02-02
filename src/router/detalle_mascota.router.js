@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 
 const router = express.Router();
 const { mostrar, mandar, listar, actualizar, eliminar, traer} = require("../controller/detalle_mascota.controller");
@@ -11,4 +11,4 @@ router.get('/editar/:id',traer)
 router.post('/editar/:id',actualizar)
 router.get('/eliminar/:id',eliminar)
 
-module.exports = router;
+module.exports = router;*/

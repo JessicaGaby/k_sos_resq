@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+  }
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+.menu-item img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  
+.menu-item:hover {
+    color: #109cf1;
+  }
+
+.menu-item.active {
+    background-color: white;
+}
+
+.underline-text {
+    color: #333;
+    text-decoration: underline;
+}
+.textos {
+    color: #109cf1;
+    font-size: 24px;
+}
+h1.textos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Puedes ajustar el margen según tus preferencias */
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+.user-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+.crud-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -200px;
+    margin-left: 400px;
+}
+
+.crud-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+h1, h2{
+    text-align: center;
+}
+
+button {
+    background-color: #2563EB;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

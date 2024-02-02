@@ -1,4 +1,4 @@
-const detalle_objetoCtl = {}
+/*const detalle_objetoCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
@@ -59,4 +59,4 @@ detalle_objetoCtl.eliminar = async (req, res) => {
 }
 
 
-module.exports = detalle_objetoCtl
+module.exports = detalle_objetoCtl*/

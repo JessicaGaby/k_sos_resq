@@ -1,26 +1,30 @@
-<link rel="stylesheet" href="/css/buses/agregar.css">
+<link rel="stylesheet" href="/css/usuarioagregar.css">
 <form action="/usuario/agregar" method="post">
 <body>
-    <div id="container">
-        <h2>Registro</h2>
+    <img src="/img/sos.png" class="imagen1">
+    <img src="/img/iconsos.jpg" class="imagen2">
+    <form>
+    <div class="content">
+    <div class="form-container">
+        <div class="mb-3">
 
         <label id="nombre" for="placa">Nombres</label> <br>
-        <input type="text" id="nombres" name="nombres" required>
+        <input type="text" class="form-control" id="nombres" name="nombres" required>
 
         <label id="apellido" for="placa">Apellidos</label> <br>
-        <input type="text" id="apellidos" name="apellidos" required>
+        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
 
         <label id="correo" for="placa">Correo eléctronico:</label> <br>
-        <input type="text" id="correos" name="correoelectronico" required>
+        <input type="text" class="form-control" id="correos" name="correoelectronico" required>
 
         <label id="contrasena" for="placa">Contraseña:</label> <br>
-        <input type="password" id="contrasenas" name="contrasena" required>
+        <input type="password" class="form-control" id="contrasenas" name="contrasena" required>
 
         <label id="fecha" for="placa">Fecha de registro:</label> <br>
-        <input type="date" id="fechas" name="fecha_registro" required>
+        <input type="date" class="form-control" id="fechas" name="fecha_registro" required>
 
         <label id="nacimiento" for="placa">Fecha de nacimiento:</label> <br>
-        <input type="date" id="nacimientos" name="fecha_nacimiento" required>
+        <input type="date" class="form-control" id="nacimientos" name="fecha_nacimiento" required>
 
         <br> <br><br>
         <br> <br>
@@ -28,13 +32,11 @@
                 <div id="boton">
             <!-- Utilizar un enlace con href en lugar de un select -->
             <label for="redireccion">Selecciona una opción:</label>
-            <select id="redireccionSelect" onchange="redirigirPagina()">
-                <option value="" disabled selected>Elige una opción</option>
-                <option value="/objeto/agregar">Agregar Objeto</option>
-                <option value="/pagina1">Página 1</option>
-                <option value="/pagina2">Página 2</option>
-                <!-- Agrega más opciones según sea necesario -->
-            </select>
+            <select class="Selector">
+            <option value="resgistro">Registro Usuario</option>
+            <option value="resgistro">Registro Mascota</option>
+            <option value="resgistro">Registro Objeto</option>
+        </select>
         </div>
 
         <div id="boton">
@@ -42,7 +44,8 @@
             <a href="#" onclick="cancelar()">Cancelar</a>
         </div>
     </div>
-
+    </div>
+    </div>
     <script>
         function redirigirPagina() {
             var seleccion = document.getElementById("redireccionSelect").value;

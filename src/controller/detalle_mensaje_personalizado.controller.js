@@ -1,4 +1,4 @@
-const detalle_mensaje_personalizadoCtl = {}
+/* const detalle_mensaje_personalizadoCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
@@ -53,4 +53,4 @@ detalle_mensaje_personalizadoCtl.eliminar = async (req, res) => {
 }
 
 
-module.exports = detalle_mensaje_personalizadoCtl
+module.exports = detalle_mensaje_personalizadoCtl */

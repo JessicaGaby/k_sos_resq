@@ -1,285 +1,81 @@
-.titulo { 
-	color:#109cf1;
-	width:1000px;
-	height: 24px;
-	font-family:Open Sans;
-	text-align:left;
-	font-size:25px;
-	letter-spacing:0; 
-}
-.nombre { 
-	color:rgba(25.000000409781933, 42.000001296401024, 62.00000010430813, 1);
-	width:146px;
-	height:21px;
-	font-family:Poppins;
-	text-align:left;
-	font-size:20px;
-	letter-spacing:0;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 
-.correo { 
-	color:#90a0b7;
-	width:199px;
-	height:14px;
-	position:absolute;
-	left:8px;
-	top:90px;  
-	font-family:Poppins;
-	text-align:left;
-	font-size:13px;
-	letter-spacing:1;
-}
-.lineas {
-    width: 20px ; 
-    height: 10 px; 
-    position: relative;
-    top: 40px; 
-}   
-.registro { 
-    color: #109cf1;
-    width: 174px;
-    height: 20px;
-    font-family: Poppins;
-    text-align: left;
-    font-size: 13px;
-    letter-spacing: 1;
-    position: absolute;
-    left: 30px; 
-    top: 13 0px; 
-}
-.shadow {
-    box-shadow: 6px 0px 18px rgba(5, 5, 5, 0.06);
-    background-color: rgba(255, 255, 255, 1);
-    width: 400  px;
-    height: 982px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
+nav {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
 }
 
-.lineahorizontal {
-    background-color: rgba(235, 239, 242, 1);
-    width: 256px;
-    height: 1px;
-    position: absolute;
-    left: 0;
-    top: 450px;
-    z-index: -1; 
-}
-.lineahorizontal2 {
-  background-color: rgba(235, 239, 242, 1);
-  width: 256px;
-  height: 1px;
-  position: absolute;
-  left: 0;
-  top:10px;
-  z-index: -1; 
+.textos {
+  color: #109cf1;
+  font-size: 24px;
 }
 
-.lineavertical {
-  background-color: rgba(235, 239, 242, 1);
-  width: 1px; 
-  height:600px; 
-  position: absolute;
-  left: 257px; 
-  top: 10px;
-  z-index: -1;
+.user-info {
+  margin-bottom: 20px;
 }
 
-
-.agrupar     {
-    overflow: hidden;
-    width: 176px;
-    height:1000px;
-    position: absolute;
-  }
-  
-.punto {
-  border-radius: 500px;
-  width: 7px;
-  height: 7px;
-  position: absolute;
-  left:28px;
-  top: 45px;
-  border: 2px solid rgba(46, 212, 122, 1);
-}
-  
-.Datos {
-  width: 160px; 
-  height: 20px;
-  position: absolute;
-  left: 50px;
-  top: 32px;
-  color: rgba(51, 77, 110, 1);
-  font-family: Poppins;
-  text-align: left;
-  font-size: 13px;
-  letter-spacing: 1;
-}  
-     
-.famili {
-  width: 174px;
-  height: 20px;
-  position: absolute;
+.user-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
 }
 
-.familiares {
-	color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
-	width:189px;
-	height:20px;
-	position:absolute;
-	left:35px;
-	top: 63px;
-	font-family:Poppins;
-	text-align:left;
-	font-size:13px;
-	letter-spacing:1;
-  text-decoration: underline; 
+.user-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
 }
 
-.punto2 {
-  border-radius:500px;
-  width:7px;
-  height:7px;
-  position: absolute;
-  left:28px;
-  top: 110px;
-  border: 2px solid rgba(46, 212, 122, 1);
-}
-  
-.Datos2 {
-  width:200px; 
-  height: 160px;
-  position: absolute;
-  left: 50px;
-  top: 96px;
-  color: rgba(51, 77, 110, 1);
-  font-family: Poppins;
-  text-align: left;
-  font-size: 13px;
-  letter-spacing: 1;
+.menu-item {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
-.imgcorreo1{
-  width:30px; 
-  height:20px;
-  position: absolute;
-  left: 5px;
-  top: 80px; 
+.menu-item img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
 }
-.imgcorreo2{
-  width:30px; 
-  height:20px;
-  position: absolute;
-  left: 5px;
-  top: 140px; 
+
+.menu-item:hover {
+  color: #109cf1;
 }
-.mensaje { 
-	color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
-	width:250px;
-	height:40px; 
-	position:absolute;
-	left:42px;
-	top:250px;
-	font-family:Poppins;
-	text-align:left;
-	font-size:13px;
-	letter-spacing:1;
+
+.menu-item.active {
+  background-color: white;
+}
+
+.underline-text {
+  color: #333;
   text-decoration: underline;
 }
-.imglineas2{
-  width:25px; 
-  height:25px;
+
+h1.textos {
+  margin: 10px;
   position: absolute;
-  left: 15px;
-  top: 300px; 
-} 
-.historial {
-  color: rgba(51, 77, 110, 1);
-  width: 188px;
-  height: 20px;
-  margin-left: 40px; 
-  margin-top: 189px; 
-  text-align: left;
-  font-size: 13px;
-  letter-spacing: 1;
-}
-.punto3 {
-  border-radius:500px;
-  width:8px;
-  height:8px;
-  position: absolute;
-  margin-left: 40px; 
-  margin-top: -18px; 
-  border: 2px solid #FFB946;
-}
-.punto4 {
-  border-radius:500px;
-  width:8px;
-  height:8px;
-  position: absolute;
-  margin-left: 40px; 
-  margin-top: 12px; 
-  border: 2px solid #FFB946;
 }
 
-.ubi { 
-	color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
-	width:188px;
-	height:20px;
-	position:absolute;
-	left:70px;
-	top:300px;
-	font-family:Poppins;
-	text-align:left;
-	font-size:13px;
-	letter-spacing:1;
-  text-decoration: underline;
+h2, p {
+  margin-right: 10px;
+
 }
-.acti { 
-	color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
-	width:188px;
-	height:20px;
-	position:absolute;
-	left:70px;
-	top:330px;
-	font-family:Poppins;
-	text-align:left;
-	font-size:13px;
-	letter-spacing:1;
-  text-decoration: underline;
-}
-.sesion { 
-	color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
-	width:188px;
-	height:20px;
-  position:absolute;
-  left:10px;
-	top:400px;
-	font-family:Poppins;
-	text-align:left;
-	font-size:13px;
-	letter-spacing:1;
-}
-.config {
-    width:16px; 
-    height:8px;
-    position: absolute;
-    left: 5px;
-    top: 480px; 
-  } 
-.imgsos {
-  width:70px; 
-  height:7  0px;
-  position: absolute;
-  left: 1260px;
-  top: 10px; 
-}  
+
 .loca { 
 	color:rgba(0, 0, 0, 1);
-	width:583px;
-	height:24px;
+	width:370px;
+	height:1 4px;
   position:absolute;
   left:550px;
 	top:60px;
@@ -308,12 +104,12 @@
   width:300px; 
   height:200px;
   position: absolute;
-  left: 400px;
+  left: 400px;  
   top: 150px; 
 } 
 .dis { 
 	color:rgba(120.0624842941761, 30.515881329774857, 100.36223620176315, 1);
-	width:294px;
+	width:200px;
 	height:48px;
   position:absolute;
   left:400px;

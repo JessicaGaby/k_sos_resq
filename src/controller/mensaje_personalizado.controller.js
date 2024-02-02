@@ -9,11 +9,13 @@ mensaje_personalizadoCtl.mostrar = (req, res) => {
 //mandar
 mensaje_personalizadoCtl.mandar = async (req, res) => {
     const id =req.id_mensaje_personalizado  //ojo
-    const { mensaje, descripcion, fecha_mensaje } = req.body
+    const { mensaje, descripcion, fecha_mensaje, hora_mensaje } = req.body
     const nuevoEnvio = {
         mensaje, 
         descripcion, 
-        fecha_mensaje
+        fecha_mensaje,
+        // detalle 
+        hora_mensaje
     }
     await orm.mensaje_personalizado.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
@@ -34,11 +36,13 @@ mensaje_personalizadoCtl.traer = async (req, res) => {
 
 mensaje_personalizadoCtl.actualizar = async (req, res) => {
     const ids = req.params.id
-    const { mensaje, descripcion, fecha_mensaje } = req.body
+    const { mensaje, descripcion, fecha_mensaje, hora_mensaje } = req.body
     const nuevoEnvio = {
         mensaje, 
         descripcion, 
-        fecha_mensaje
+        fecha_mensaje,
+        //detalle 
+        hora_mensaje
     }
     await orm.mensaje_personalizado.findOne({ where: { id_mensaje_personalizado: ids } })
         .then(actualizar => {

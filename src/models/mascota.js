@@ -10,7 +10,12 @@ const mascota = (sequelize, type) => {
         raza: type.STRING,
         altura: type.STRING,
         peso: type.STRING,
-    
+        //detalle
+        numero_telefonico: type.STRING,
+        medicamentos: type.STRING,
+        direccion_mascota: type.STRING,
+        fecha_vacuna: type.STRING,
+        nombre_propietario: type.STRING,
 
         crearMascota:{
             type: 'TIMESTAMP',

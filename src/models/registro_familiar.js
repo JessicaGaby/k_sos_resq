@@ -8,6 +8,9 @@ const registro_familiar = (sequelize, type) => {
         nombres: type.STRING,
         apellidos: type.STRING,
         correo_electronico: type.STRING,
+        //detalle_familiar
+        telefono: type.STRING,
+
     
 
         crearRegistro_familiar:{
