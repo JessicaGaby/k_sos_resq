@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/listarpersona.css">
+<!-- <link rel="stylesheet" href="/css/listarpersona.css">
 <form action="persona/listar/"method="get"></form>
 <body>
    <nav>
@@ -53,4 +53,69 @@
 </div>
 </div>
 </div>
+</body> -->
+<link rel="stylesheet" href="/css/listarpersona.css">
+<form action="persona/listar/"method="get"></form>
+ <body>
+        <nav>
+        <h1 class="textos">SOS RESQ</h1>
+        <div class="user-info">
+            <br><br>
+            <h2>Camila</h2>
+            <p>camila@example.com</p>
+        </div>
+        <a href="#" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro"> Registro Información</a>
+        <a href="#" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
+        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
+        <a href="#" class="menu-item"><img src="/img/circulo.png"Guardados> Datos Guardados</a>
+        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
+        <a href="#" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
+        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Ubicación"> Historial de Ubicación</a> 
+        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
+         <br><br>
+         <a href="#" class="underline-text">cerrar sesion <u></u></a>
+   
+    </nav>
+    <div class="row">
+    <table class="tabla-registros">
+        <h1>Registros de personas</h1>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Fecha de nacimiento</th>
+                <th>genero</th>
+                <th>Direccion</th>
+                <th>Correo Electrónico</th>
+                <th>Telefono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each lista}}
+                <tr>
+                    <td>{{nombres}}</td>
+                    <td>{{apellidos}}</td>
+                    <td>{{fecha_nacimiento}}</td>
+                    <td>{{sex}}</td>
+                    <td>{{direccion}}</td>
+                    <td>{{correo_persona}}</td>
+                    <td>{{numero_persona}}</td>
+                    <td>
+                        <a href="/persona/editar/{{id_persona}}">
+                            <button type="button">Editar</button>
+                        </a>
+                        <a href="/persona/listar/eliminar/{{id_persona}}">
+                            <button type="button" style="background-color: red;">Eliminar</button>
+                        </a>
+                    
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+</div>
+    
 </body>

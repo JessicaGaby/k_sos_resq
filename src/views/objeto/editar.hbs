@@ -34,19 +34,19 @@
             <input type="text" id="modelo" name="modelo" value="{{modelo}}" required>
 
             <label id="numero_series" for="numero_serie">Numero de Serie</label> <br>
-            <input type="text" id="numero_serie" name="numero_serie" value="{{numero_serie}}" required>
+            <input type="number" id="numero_serie" name="numero_serie" value="{{numero_serie}}" required>
 
             <label id="numero_contacto" for="numero_contacto">Numero de Contacto</label> <br>
-            <input type="text" id="numero_contacto" name="numero_contacto" value="{{numero_contacto}}" required>
+            <input type="number" id="numero_contacto" name="numero_contacto" value="{{numero_contacto}}" required>
 
             <label id="correo_electronicos" for="correo_objeto">Correo Electronico</label> <br>
-            <input type="text" id="correo_electronico" name="correo_objeto" value="{{correo_objeto}}" required>
+            <input type="email" id="correo_electronico" name="correo_objeto" value="{{correo_objeto}}" required>
 
             <label id="fecha_perdida" for="fecha_perdida">Fecha de la perdida</label> <br>
-            <input type="text" id="fecha_perdida" name="fecha_perdida" value="{{fecha_perdida}}" required>
+            <input type="date" id="fecha_perdida" name="fecha_perdida" value="{{fecha_perdida}}" required>
 
             <label id="hora_perdida" for="hora_perdida">Hora de la perdida</label> <br>
-            <input type="text" id="hora_perdida" name="hora_perdida" value="{{hora_perdida}}" required>
+            <input type="time" id="hora_perdida" name="hora_perdida" value="{{hora_perdida}}" required>
 
             <label id="ubicacion_perdida" for="ubicacion_perdida">Ubicación de la perdida</label> <br>
             <input type="text" id="ubicacion_perdida" name="ubicacion_perdida" value="{{ubicacion_perdida}}" required>
@@ -56,10 +56,10 @@
             <br> <br><br>
             <br> <br>
 
-            <div id="boton">
-                <button type="submit">Actualizar</button>
+            <div class="login">
+                <button style="background-color: red;" type="submit">Actualizar</button>
             </div>
-            <div class="cancelar">
+            <div class="atras">
                 <button type="submit">Cancelar</button>
             </div>
         </div>

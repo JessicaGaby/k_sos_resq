@@ -65,32 +65,49 @@ h1.textos {
     font-size: 14px;
     color: #777;
 }
-.crud-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -200px;
-    margin-left: 400px;
+
+
+.tabla-registros {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: 80px;
 }
 
-.crud-content {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-}
-h1, h2{
+.tabla-registros th{
+    padding: 15px;
     text-align: center;
+    color: #777;
 }
 
-button {
+.tabla-registros td {
+    padding: 8px;
+    text-align: center;
+    color: #777;
+}
+.tabla-registros td {
+    text-align: center;
+    padding-top: 30px;
+}
+.tabla-registros a {
+    text-decoration: none;
+}
+
+.tabla-registros button {
     background-color: #2563EB;
     color: #fff;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 5px;
+}
 
+.tabla-registros button:hover {
+    background-color: #316dce;
+}
+
+h1{
+    margin-left: 400px;
+    color: #109cf1;
 }
