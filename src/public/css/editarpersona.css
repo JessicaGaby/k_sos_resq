@@ -81,16 +81,17 @@ h2,p{
     margin-top: -650px;
     margin-left: 600px;
     
+    
 }
 
 .crud-content {
-    background-color: #afafaf8e;
+    background-color:  #a7a7a753;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 350px;
     height: 515px;
-    margin-top: 5px;
+    margin-top: -43px;
     
 }
 
@@ -124,11 +125,11 @@ button {
 }
 .atras{
     position: absolute;
-    top: 78%;
-    left: 45%;
+    top: 82%;
+    left: 54%;
 }
 .login{
     position: absolute;
-    top: 78%;
-    left: 54%;
+    top: 82%;
+    left: 62%;
 }

@@ -22,7 +22,7 @@ label {
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px;
-    background-color: #7373733e;
+    background-color: #f8f9fa;
 }
 
 .form-container {
@@ -30,9 +30,9 @@ label {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 20px;
-    background-color: #d2d2d253;
-    margin-left: 100px;
-    margin-top: -150px;
+    background-color: #a7a7a753;
+    margin-left: 50px;
+    margin-top: -87px;
 }
 .content {
     display: flex;
@@ -49,13 +49,13 @@ label {
 }
 .login{
     position: absolute;
-    top: 83%;
-    right: 15%;
+    top: 89%;
+    right: 17%;
 }
 .atras{
     position: absolute;
-    top: 83%;
-    right: 22%;
+    top: 89%;
+    right: 25%;
 }
 button {
     background-color: #2563EB;
