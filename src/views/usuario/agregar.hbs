@@ -38,26 +38,39 @@
             <option value="resgistro">Registro Objeto</option>
         </select>
         </div>
+        <a href="#" class="menu-item active"><img src="cuadrado.PNG" alt="Registro"> Registro Información</a>
+        <a href="#" class="menu-item"><img src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-vert.png" alt="Datos"> Datos Guardados</a>
+        <a href="#" class="menu-item"><img src="correo.PNG" alt="Familia"> Registro Familiares</a>
+        <a href="#" class="menu-item"><img src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-vert.png" alt="Guardados"> Datos Guardados</a>
+        <a href="#" class="menu-item"><img src="correo.PNG" alt="Notificación"> Mensaje de Notificación</a>
+        <a href="#" class="menu-item"><img src="Captura.PNG" alt="Historial"> Historial</a>
+        <a href="#" class="menu-item"><img src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-orange.png" alt="Ubicación"> Historial de Ubicación</a>
+        <a href="#" class="menu-item"><img src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-orange.png" alt="Activaciones"> Historial de Activaciones</a>
+        <br><br>
+        <a href="#" class="underline-text">cerrar sesion <u></u></a>
+    </nav>
 
-        <div id="boton">
-            <!-- Mantener un enlace de cancelar -->
-            <a href="#" onclick="cancelar()">Cancelar</a>
+    <div class="crud-container">
+        <div class="crud-content">
+            <h1>Registro Familiar</h1>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
+
+                <button type="button" onclick="actualizarRegistro()">Actualizar</button>
+            </form>
+            
         </div>
     </div>
-    </div>
-    </div>
-    <script>
-        function redirigirPagina() {
-            var seleccion = document.getElementById("redireccionSelect").value;
-            if (seleccion !== "") {
-                window.location.href = seleccion;
-            }
-        }
-
-        function cancelar() {
-            alert("Operación cancelada");
-        }
-    </script>
-</body>
-
+    <img src="descarga.png" class="imagen" >
+  </body>
 </form>
