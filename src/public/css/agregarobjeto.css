@@ -7,7 +7,7 @@
 }
 h1{
     position: absolute;
-    top: 0%;
+    top: -2%;
     right: 12%;
 }
 .mb-3 {
@@ -33,11 +33,12 @@ label {
 
 .form-container {
     width: 400px;
+    height: 520px;
     padding: 20px;
     border: 1px solid #b6b6b688;
     border-radius: 20px;
     background-color: #afafaf6b;
-    margin-top: -150px;
+    margin-top: -80px;
 }
 .content {
     display: flex;
@@ -54,9 +55,9 @@ label {
 }
 .login{
     position: absolute;
-    top: 85%;
-    right: 20%;
-    left: 80%;
+    top: 90%;
+    right: 30%;
+    left: 76%;
     
 }
 button {
@@ -70,7 +71,7 @@ button {
 }
 .atras{
     position: absolute;
-    top: 85%;
-    right: 20%;
-    left: 70%;
+    top: 90%;
+    right: 30%;
+    left: 68%;
 }
