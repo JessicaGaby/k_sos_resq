@@ -1,59 +1,3 @@
-<!-- <link rel="stylesheet" href="/css/listarpersona.css">
-<form action="persona/listar/"method="get"></form>
-<body>
-   <nav>
-        <h1 class="textos">SOS RESQ</h1>
-        <div class="user-info">
-            <br><br>
-            <h2>Camila</h2>
-            <p>camila@example.com</p>
-        </div>
-        <a href="#" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro"> Registro Información</a>
-        <a href="#" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
-        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
-        <a href="#" class="menu-item"><img src="/img/circulo.png"Guardados> Datos Guardados</a>
-        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
-        <a href="#" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
-        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Ubicación"> Historial de Ubicación</a> 
-        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
-         <br><br>
-         <a href="#" class="underline-text">cerrar sesion <u></u></a>
-   
-    </nav> 
-
-        <div class="crud-container">
-        <div class="crud-content">
-            <h1>Listado de Personas</h1>
-    
-    <div class="row">
-        {{#each lista}}
-        <div id="tarjeta">
-            <u><h2>Datos de la Persona</h2></u>
-            <div>
-                
-               <div class="nomb"><p>{{nombres}}</p></div> 
-                <p>{{apellidos}}</p>
-                <p>{{fecha_nacimiento}}</p>
-                <p>{{sex}}</p>
-                <p>{{direccion}}</p>
-                <p>{{correo_persona}}</p>
-                <p>{{numero_persona}}</p>
-                
-            <div>
-                <div>
-                    <a href="/persona/editar/{{id_persona}}"><button type="button">Editar</button></a>
-                </div></p>
-                <div>
-                    <a href="/persona/eliminar/{{id_persona}}"><button type="button" style="background-color: red;">Eliminar</button></a>
-                </div></p>
-            </div>
-        </div>
-        {{/each}}
-    </div>
-</div>
-</div>
-</div>
-</body> -->
 <link rel="stylesheet" href="/css/listarpersona.css">
 <form action="persona/listar/"method="get"></form>
  <body>
@@ -64,14 +8,14 @@
             <h2>Camila</h2>
             <p>camila@example.com</p>
         </div>
-        <a href="#" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro"> Registro Información</a>
+      <a href="/usuario/agregar" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro"> Registro Información</a>
         <a href="#" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
-        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
-        <a href="#" class="menu-item"><img src="/img/circulo.png"Guardados> Datos Guardados</a>
-        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
-        <a href="#" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
-        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Ubicación"> Historial de Ubicación</a> 
-        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
+        <a href="/registro_familiar/agregar" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
+        <a href="/registro_familiar/listar/" class="menu-item"><img src="/img/circulo.png"Guardados> Datos Guardados</a>
+        <a href="/mensaje_personalizado/agregar/" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
+         <a href="/mensaje_personalizado/listar/" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
+        <a href="" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
+        <a href="/historial_activacion/agregar/" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
          <br><br>
          <a href="#" class="underline-text">cerrar sesion <u></u></a>
    
