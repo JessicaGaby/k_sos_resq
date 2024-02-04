@@ -1,4 +1,5 @@
 body {
+<<<<<<< Updated upstream
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
@@ -489,3 +490,495 @@ nav {
     font-size: 13px;
     letter-spacing: 1;
 }
+=======
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .textos {
+    color: #109cf1;
+    font-size: 24px;
+  }
+  
+  .user-info {
+    margin-bottom: 20px;
+  }
+  
+  .user-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .user-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .menu-item:hover {
+    color: #109cf1;
+  }
+  
+  .menu-item.active {
+    background-color: white;
+  }
+  
+  
+  .da { 
+      color:rgba(0, 0, 0, 0.699999988079071);
+      width:400px;
+      height:48px;
+      position:absolute;
+      left:300px;
+      top:80px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:32px;
+      letter-spacing:0;
+  }
+  
+  
+  .todos { 
+      color:rgba(0, 0, 0, 1);
+      opacity:0.5;
+      width:232px;
+      height:20px;
+      position:absolute;
+      left:300px;
+      top:140px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:13px;
+      letter-spacing:1;
+  }
+  .ayer{ 
+      color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
+      opacity:0.5;
+      width:120px;
+      height:20px;
+      position:absolute;
+      left:360px;
+      top:115px;
+      
+  }
+  .mes { 
+      color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
+      opacity:0.5;
+      width:120px;
+      height:20px;
+      position:absolute;
+      left:400px;
+      top:115px;
+      
+  }
+  
+  .nom { 
+      color:rgba(50.000000819563866, 60.00000022351742, 71.00000336766243, 1);
+      width:92px;
+      height:23px;
+      position:absolute;
+      left:400px;
+      top:200px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:15px;
+      letter-spacing:1;
+  }
+  .ape { 
+      color:rgba(50.000000819563866, 60.00000022351742, 71.00000336766243, 1);
+      width:92px;
+      height:23px;
+      position:absolute;
+      left:100px;
+      top:0px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:15px;
+      letter-spacing:1;
+  }  
+  .ge { 
+      color:rgba(50.000000819563866, 60.00000022351742, 71.00000336766243, 1);
+      width:92px;
+      height:23px;
+      position:absolute;
+      left:100px;
+      top:0px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:15px;
+      letter-spacing:1;
+  }
+  .fe { 
+      color:rgba(50.000000819563866, 60.00000022351742, 71.00000336766243, 1);
+      width:200px;
+      height:23px;
+      position:absolute;
+      left:130px;
+      top:0px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:15px;
+      letter-spacing:1;
+  }
+  .nu{ 
+      color:rgba(50.000000819563866, 60.00000022351742, 71.00000336766243, 1);
+      width:200px;
+      height:23px;
+      position:absolute;
+      left:240px;
+      top:0px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:15px;
+      letter-spacing:1;
+  }
+  .di { 
+      color:rgba(50.000000819563866, 60.00000022351742, 71.00000336766243, 1);
+      width:92px;
+      height:23px;
+      position:absolute;
+      left:350px;
+      top:0px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:15px;
+      letter-spacing:1;
+  }
+  .co { 
+      color:rgba(50.000000819563866, 60.00000022351742, 71.00000336766243, 1);
+      width:200px;
+      height:23px;
+      position:absolute;
+      left:500px;
+      top:0px;
+      font-family:Poppins;
+      text-align:left;
+      font-size:15px;
+      letter-spacing:1;
+  }
+  
+  .contenedor {
+      width:790px;
+      height:200px;
+      position: absolute;
+      left: -200px;
+      top: 21px;
+      overflow: hidden;
+  }
+  
+  .contenido {
+      width: 100px;
+      height: 700px;
+      position: absolute;
+      left: -100px;
+      top: 21px;
+  }
+  
+  .titulo2 {
+      color: rgba(50, 60, 71, 1);
+      width: 226px;
+      height: 23px;
+      position: absolute;
+      left: 101px;
+      top: 0px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 15px;
+      letter-spacing: 1;
+  }
+  
+  .seccion {
+      width: 210px;
+      height: 20px;
+      position: absolute;
+  }
+  
+  .etiqueta {
+      color: rgba(112, 118, 131, 1);
+      width: 210px;
+      height: 20px;
+      position: absolute;
+      left:203px;
+      top: 0px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  .subseccion {
+      width: 120px;
+      height: 20px;
+      position: absolute;
+  }
+  
+  .subtitulo1 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 303px;
+      top: 0px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  .subtitulo2 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 425px;
+      top: 0px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  .subtitulo3 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 535px;
+      top: 0px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  .subtitulo4 {
+      color: rgba(112, 118, 131, 1);
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      left: 830px;
+      top: 0px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  .subtitulo5 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left:630px;
+      top: 0px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  .titulo3 {
+      color: rgba(50, 60, 71, 1);
+      width: 226px;
+      height: 23px;
+      position: absolute;
+      left: 101px;
+      top: 50px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 15px;
+      letter-spacing: 1;
+  }
+  
+  
+  
+  .etiqueta1 {
+      color: rgba(112, 118, 131, 1);
+      width: 210px;
+      height: 20px;
+      position: absolute;
+      left:203px;
+      top: 50px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  
+  .subtitulo6 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 303px;
+      top: 50px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  .subtitulo7 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 425px;
+      top: 50px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  .subtitulo8 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 535px;
+      top:50px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  .subtitulo9 {
+      color: rgba(112, 118, 131, 1);
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      left: 830px;
+      top:50px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  .subtitulo10	 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left:630px;
+      top: 50px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  .titulo4 {
+      color: rgba(50, 60, 71, 1);
+      width: 226px;
+      height: 23px;
+      position: absolute;
+      left: 101px;
+      top: 100px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 15px;
+      letter-spacing: 1;
+  }
+  
+  
+  .etiqueta2 {
+      color: rgba(112, 118, 131, 1);
+      width: 210px;
+      height: 20px;
+      position: absolute;
+      left:203px;
+      top: 100px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  
+  .subtitulo11 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 303px;
+      top: 100px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  .subtitulo12 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 425px;
+      top: 100px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  .subtitulo13 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left: 535px;
+      top:100px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  
+  .subtitulo14 {
+      color: rgba(112, 118, 131, 1);
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      left: 830px;
+      top:100px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+  .subtitulo15	 {
+      color: rgba(112, 118, 131, 1);
+      width: 120px;
+      height: 20px;
+      position: absolute;
+      left:630px;
+      top: 100px;
+      font-family: Poppins;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 1;
+  }
+>>>>>>> Stashed changes
