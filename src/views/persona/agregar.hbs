@@ -1,44 +1,44 @@
 {{!-- Funcional --}}
 <link rel="stylesheet" href="/css/agregarpersona.css">
 <form action="/persona/agregar" method="post">
-
     <body>
         <img src="/img/image 4.png" class="img3">
-    <h1>REGISTRO PERSONA</h1>
-    <div class="content">
-        <div class="form-container">
-            <div class="mb-3">
+        <h1>REGISTRO PERSONA</h1>
+        <div class="content">
+            <div class="form-container">
+                <div class="mb-3">
+                    <label id="nombre" for="nombres">Nombres</label> <br>
+                    <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
 
-            <label id="nombre" for="nombres">Nombres</label> <br>
-            <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres" required>
+                    <label id="apellido" for="apellidos">Apellidos</label> <br>
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
 
-            <label id="apellido" for="apellidos">Apellidos</label> <br>
-            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                    <label id="fecha_nacimientos" for="fecha_nacimiento">Fecha Nacimiento</label> <br>
+                    <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento" required>
 
-            <label id="fecha_nacimientos" for="fecha_nacimiento">Fecha Nacimiento</label> <br>
-            <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento" required>
+                    <label id="sexs" for="sex">Sexo</label> <br>
+                    <input type="text" class="form-control" id="sex" name="sex" placeholder="Sexo" required>
 
-            <label id="sexs" for="sex">Sexo</label> <br>
-            <input type="text" class="form-control" id="sex" name="sex" placeholder="Sexo" required>
+                    <label id="direcciones" for="direccion">Dirección</label> <br>
+                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
 
-            <label id="direcciones" for="direccion">Direccion</label> <br>
-            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+                    <label id="correo_electronicos" for="correo_persona">Correo Electrónico</label> <br>
+                    <input type="email" class="form-control" id="correo_persona" name="correo_persona" placeholder="Correo electrónico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
 
-            <label id="correo_electronicos" for="correo_persona">Correo Electronico</label> <br>
-            <input type="email" class="form-control" id="correo_persona" name="correo_persona" placeholder="Correo electrónico" required>
+                    <label id="numero_persona" for="numero_persona">Telefono:</label> <br>
+                    <input type="tel" class="form-control" id="numero_persona" name="numero_persona" placeholder="Telefono" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
 
-            <label id="numero_persona" for="numero_persona">Telefono:</label> <br>
-            <input type="number" class="form-control" id="numero_persona" name="numero_persona" placeholder="Telefono" required>
-            <br> <br><br>
-            <br> <br>
-             <div class="login">
-            <button type="submit" style="background-color: red;" id="">Cancelar</button>
-            </div>
-             <div class="atras">
-            <button type="submit" id="">Registrar</button>
-            </div>
-            </div>
+                    <br> <br><br>
+                    <br> <br>
+                    <div class="login">
+                        <button type="button" style="background-color: red;" onclick="cancelarFormulario()">Cancelar</button>
+                    </div>
+                    <div class="atras">
+                        <button type="submit" id="">Registrar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
 </form>
+

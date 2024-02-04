@@ -21,17 +21,23 @@
             <input class="form-control" type="text" id="raza" name="raza" placeholder="Raza" required>
             
             
-            <label id="height" for="altura">Altura:</label> <br>
-            <input class="form-control" type="text" id="altura" name="altura" placeholder="Altura" required>
+           <label id="height" for="altura">Altura (M):</label> <br>
+          <input class="form-control" type="text" id="altura" name="altura" placeholder="Altura" pattern="^(?:[0-1](\.[0-9]{1,2})?)?$" title="Ingrese una altima Maxima 1.9 Metros" maxlength="4">
+
+
             
            
-            <label id="weight" for="peso">Peso:</label> <br>
-            <input class="form-control" type="text" id="peso" name="peso" placeholder="Peso" required>
+          <label id="weight" for="peso">Peso (KG):</label> <br>  
+          <input class="form-control" type="text" id="peso" name="peso" placeholder="Peso" title="Por favor, ingresa una peso maximo Maximo de 300 KG" required pattern="^(300(\.0{1,2})?|[0-2]?\d{1,2}(\.\d{1,2})?)$" >
+
+
+
+
 
             {{!-- detalle --}}
 
             <label id="weight" for="peso">Numero Telefonico:</label> <br>
-            <input class="form-control" type="text" id="peso" name="numero_telefonico" placeholder="Numero telefonico" required>
+            <input class="form-control" type="text" id="peso" name="numero_telefonico" placeholder="Numero telefonico" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
 
             <label id="weight" for="peso">Medicamentos:</label> <br>
             <input class="form-control" type="text" id="peso" name="medicamentos" placeholder="Medicamentos" required>
@@ -45,11 +51,6 @@
             <label id="weight" for="peso">Nombre del Propietario:</label> <br>
             <input class="form-control" type="text" id="peso" name="nombre_propietario" placeholder="Nombre propietario" required>
 
-           
-
-
-
-            
 
             <div class="login">
                 <button type="submit" id="">Registrar</button>
@@ -61,3 +62,17 @@
         </div>
     </body>
 </form>
+
+<script>
+    document.getElementById("altura").addEventListener("input", function() {
+        var alturaInput = parseFloat(this.value.replace(",", ".")); // Asegurarse de que el valor sea un número decimal
+
+        if (alturaInput > 1.50) {
+            document.getElementById("alturaError").innerText = "La altura no puede superar los 1.50 metros.";
+            this.setCustomValidity("La altura no puede superar los 1.50 metros.");
+        } else {
+            document.getElementById("alturaError").innerText = "";
+            this.setCustomValidity("");
+        }
+    });
+</script>
