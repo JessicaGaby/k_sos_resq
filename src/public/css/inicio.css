@@ -11,12 +11,19 @@ nav {
   background-color: #f8f9fa;
   padding: 20px;
   width: 200px;
+  height: 630px;
   text-align: center;
 }
 
 .textos {
   color: #109cf1;
   font-size: 24px;
+}
+h1.textos {
+position: absolute;
+top: 0;
+left: 0;
+margin: 10px; /* Puedes ajustar el margen según tus preferencias */
 }
 
 .user-info {
