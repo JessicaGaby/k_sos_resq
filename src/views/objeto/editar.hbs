@@ -34,13 +34,13 @@
             <input type="text" id="modelo" name="modelo" value="{{modelo}}" required>
 
             <label id="numero_series" for="numero_serie">Numero de Serie</label> <br>
-            <input type="number" id="numero_serie" name="numero_serie" value="{{numero_serie}}" required>
+            <input type="number" id="numero_serie" name="numero_serie" value="{{numero_serie}}" pattern="[0-9a-zA-Z]+" maxlength="10" required>
 
             <label id="numero_contacto" for="numero_contacto">Numero de Contacto</label> <br>
-            <input type="number" id="numero_contacto" name="numero_contacto" value="{{numero_contacto}}" required>
+            <input type="number" id="numero_contacto" name="numero_contacto" value="{{numero_contacto}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
 
             <label id="correo_electronicos" for="correo_objeto">Correo Electronico</label> <br>
-            <input type="email" id="correo_electronico" name="correo_objeto" value="{{correo_objeto}}" required>
+            <input type="email" id="correo_electronico" name="correo_objeto" value="{{correo_objeto}}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
 
             <label id="fecha_perdida" for="fecha_perdida">Fecha de la perdida</label> <br>
             <input type="date" id="fecha_perdida" name="fecha_perdida" value="{{fecha_perdida}}" required>

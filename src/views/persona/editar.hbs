@@ -28,22 +28,25 @@
             <h2>Actualización de Persona</h2>
 
             <label id="nombre" for="nombres">Nombres</label> <br>
-            <input type="text" id="nombres" name="nombres" value="{{nombres}}" required>
+            <input type="text" id="nombres" name="nombres" value="{{nombres}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
 
             <label id="apellido" for="apellidos">Apellidos</label> <br>
-            <input type="text" id="apellidos" name="apellidos" value="{{apellidos}}" required>
+            <input type="text" id="apellidos" name="apellidos" value="{{apellidos}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
 
             <label id="fecha_nacimientos" for="fecha_nacimiento">Fecha de Nacimiento</label> <br>
             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="{{fecha_nacimiento}}" required>
 
-            <label id="sex" for="sex">Sexo</label> <br>
-            <input type="text" id="sex" name="sex" value="{{sex}}" required>
+                    <label id="sexs" for="sex">Sexo</label> <br>
+                    <select class="form-control" id="sex" name="sex" required>
+                    <option value="masculino" name="sex">Masculino</option>
+                    <option value="femenino" name="sex">Femenino</option>
+                    </select>
 
             <label id="direcciones" for="direccion">Direccion</label> <br>
-            <input type="text" id="direccion" name="direccion" value="{{direccion}}" required>
+            <input type="text" id="direccion" name="direccion" value="{{direccion}}"  required>
 
             <label id="correo_persona" for="correo_persona">Correo Electronico</label> <br>
-            <input type="text" id="correo_persona" name="correo_persona" value="{{correo_persona}}" required>
+            <input type="text" id="correo_persona" name="correo_persona" value="{{correo_persona}}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
 
             <label id="numero_persona" for="numero_persona">Telefono:</label> <br>
             <input type="text" id="numero_persona" name="numero_persona" value="{{numero_persona}}" required>

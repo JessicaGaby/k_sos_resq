@@ -28,16 +28,16 @@
             <h2>Actualización del Registo Familiar</h2>
             
             <label id="nombre" for="placa">Nombres:</label> <br>
-            <input type="text" id="nombres" name="nombres" value="{{nombres}}" required>
+            <input type="text" id="nombres" name="nombres" value="{{nombres}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
 
             <label id="apellido" for="placa">Apellidos:</label> <br>
-            <input type="text" id="apellidos" name="apellidos" value="{{apellidos}}" required>
+            <input type="text" id="apellidos" name="apellidos" value="{{apellidos}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
 
             <label id="correo_electronicos" for="placa">Correo Electronico:</label> <br>
-            <input type="text" id="correo_electronico" name="correo_electronico" value="{{correo_electronico}}" required>
+            <input type="text" id="correo_electronico" name="correo_electronico" value="{{correo_electronico}}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
 
             <label id="telefono" for="telefono">Telefono::</label> <br>
-            <input type="text" id="telefono" name="telefono" value="{{telefono}}" required>
+            <input type="text" id="telefono" name="telefono" value="{{telefono}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
 
             <br> <br><br>
             <br> <br>
