@@ -54,7 +54,7 @@
         {{!-- detalle --}}
 
         <label id="weight" for="peso">Numero Telefonico:</label> <br>
-        <input class="form-control" type="text" id="peso" name="numero_telefonico" placeholder="Numero telefonico" value="{{numero_telefonico}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"  required>
+        <input class="form-control" type="text" id="peso" name="numero_telefonico" placeholder="Numero telefonico" value="{{numero_telefonico}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"  required>
 
         <label id="weight" for="peso">Direccion del Propietario:</label> <br>
         <input class="form-control" type="text" id="peso" name="direccion_mascota"  placeholder="Direccion del Propietario" value="{{direccion_mascota}}" required>
@@ -63,7 +63,7 @@
         <input class="form-control" type="date" id="peso" name="fecha_vacuna" placeholder="Fecha Vacuna" value="{{fecha_vacuna}}" required>
 
         <label id="weight" for="peso">Nombre del Propietario:</label> <br>
-        <input class="form-control" type="text" id="peso" name="nombre_propietario" placeholder="Nombre propietario" value="{{nombre_propietario}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10"  required>
+        <input class="form-control" type="text" id="peso" name="nombre_propietario" placeholder="Nombre propietario" value="{{nombre_propietario}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"   required>
 
         <div id="boton">
           <button type="submit">Actualizar</button>
