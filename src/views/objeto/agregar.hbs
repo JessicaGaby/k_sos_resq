@@ -20,10 +20,10 @@
             <input type="text" class="form-control" id="numero_serie" name="numero_serie" placeholder="Número de serie" pattern="[0-9a-zA-Z]+" maxlength="10" required>
 
             <label id="numero_contacto" for="numero_contacto">Numero de Contacto</label> <br>
-            <input type="text" class="form-control" id="numero_contacto" name="numero_contacto" placeholder="Número de contacto" pattern="[0-9]{10}" maxlength="10" required>
+            <input type="text" class="form-control" id="numero_contacto" name="numero_contacto" placeholder="Número de contacto" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
 
             <label id="correo_electronico" for="correo_objeto">Correo Electronico</label> <br>
-            <input type="email" class="form-control" id="correo_electronico" name="correo_objeto" placeholder="correo@example.com" pattern="[a-z0-9._%+-]+@.+\.com"  required>
+            <input type="email" class="form-control" id="correo_electronico" name="correo_objeto" placeholder="correo@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido"  required>
 
             <label id="fecha_perdida" for="fecha_perdida">Fecha de la perdida</label> <br>
             <input type="date" class="form-control" id="fecha_perdida" name="fecha_perdida" placeholder="Fecha de la perdida" required>

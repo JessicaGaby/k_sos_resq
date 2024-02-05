@@ -28,26 +28,25 @@
                 <div class="crud-content">
                     <h1>Registro Familiar</h1>
                     <form>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombres" placeholder="Ingrese su nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombres" placeholder="Ingrese su nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
 
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellidos" placeholder="Ingrese su apellido" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios">
+<label for="apellido">Apellido:</label>
+<input type="text" id="apellido" name="apellidos" placeholder="Ingrese su apellido" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
 
-                        <label for="correo">Correo:</label>
-                        <input type="email" id="correo" name="correo_electronico" placeholder="Ingrese su correo">
+<label for="correo">Correo:</label>
+<input type="email" id="correo" name="correo_electronico" placeholder="Ingrese su correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
 
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
+
 
                         <div id="boton">
                             <button type="submit" id="">Guardar</button>
                         </div>
                         <br>
                         <br>
-                        <div id="boton">
-                            <button type="submit" id="">Cancelar</button>
-                        </div>
+
 
                     </form>
 
