@@ -55,9 +55,9 @@ label {
 }
 .login{
     position: absolute;
-    top: 90%;
+    top: 95%;
     right: 30%;
-    left: 76%;
+    left: 73%;
     
 }
 button {
@@ -71,7 +71,7 @@ button {
 }
 .atras{
     position: absolute;
-    top: 90%;
+    top: 95%;
     right: 30%;
     left: 68%;
 }
