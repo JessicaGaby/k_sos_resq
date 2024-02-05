@@ -1,4 +1,3 @@
-{{!-- Funcional --}}
 <link rel="stylesheet" href="/css/mensajepersonalizado.css">
 <form action="/mensaje_personalizado/agregar" method="post">
 
@@ -9,14 +8,14 @@
         <h2>Camila</h2>
         <p>camila@example.com</p>
       </div>
-      <a href="/usuario/agregar" class="menu-item active"><img src="/img/cuadrado.png" alt="Registro"> Registro Información</a>
+      <a href="#" class="menu-item active"><img src="/img/cuadrado.png" alt="Registro"> Registro Información</a>
       <a href="#" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
-      <a href="/registro_familiar/agregar" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
+      <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
       <a href="#" class="menu-item"><img src="/img/circulo.png" Guardados> Datos Guardados</a>
-      <a href="/mensaje_personalizado/agregar" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
+      <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
       <a href="#" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
       <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Ubicación"> Historial de Ubicación</a>
-      <a href="/historial_activacion/agregar" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
+      <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
       <br><br>
       <a href="#" class="underline-text">cerrar sesion <u></u></a>
     </nav>
@@ -33,8 +32,10 @@
       <label id="fecha_mensajes" for="fecha_mensaje">Fecha mensaje</label> <br>
       <input type="date" id="fecha_mensaje" name="fecha_mensaje" required>
 
-      <br> <br><br>
-      <br> <br>
+      <label id="hora" for="hora">Hora de perdida</label> <br>
+      <input type="time" id="hora" name="hora" required>
+      <br><br>
+      
       <div class="registrarse">
         <button type="submit" id="">Registrar</button>
       </div>
@@ -45,5 +46,3 @@
 
   </body>
 </form>
-
-
