@@ -1,58 +1,51 @@
-{{!-- Funcional --}}
-<link rel="stylesheet" href="/css/agregarmascota.css">
-<form action="/mascota/agregar" method="post">
+<body>
+    <link rel="stylesheet" href="/css/agregarmascota.css">
+<form action="http://localhost:4000/mascota/agregar" method="post">
 
-    <body>
+    
         <img src="/img/image6.png" class="img3">
         <h1>REGISTRO MASCOTAS</h1>
-        <div class="content">
-             <div class="form-container">
 
-            <h2>Mascotas</h2>
-           
-            <label id="pet" for="mascota">Nombre del Animal:</label> <br>
-            <input class="form-control" type="text" id="mascota" name="nombre_mascota" placeholder="Nombre del Animal" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-            
-            <label id="species" for="especie">Especie:</label> <br>
-            <input class="form-control" type="text" id="especie" name="especie"placeholder="Especie" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-           
-            
-            <label id="race" for="raza">Raza:</label> <br>
+<div class="container">
+    
+        <div class="column">
+            <label for="mascota">Nombre del Animal:</label>
+            <input class="form-control" type="text" id="mascota" name="nombre_mascota" placeholder="Nombre del Animal" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"required>
+
+            <label for="especie">Especie:</label>
+            <input class="form-control" type="text" id="especie" name="especie" placeholder="Especie" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
+
+            <label for="raza">Raza:</label>
             <input class="form-control" type="text" id="raza" name="raza" placeholder="Raza" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-            
-            
-           <label id="height" for="altura">Altura (M):</label> <br>
-          <input class="form-control" type="text" id="altura" name="altura" placeholder="Altura" pattern="^(?:[0-1](\.[0-9]{1,2})?)?$" title="Ingrese una altima Maxima 1.9 Metros" maxlength="4">
 
-          <label id="weight" for="peso">Peso (KG):</label> <br>  
-          <input class="form-control" type="text" id="peso" name="peso" placeholder="Peso" title="Por favor, ingresa una peso maximo Maximo de 300 KG" required pattern="^(300(\.0{1,2})?|[0-2]?\d{1,2}(\.\d{1,2})?)$" >
+            <label for="altura">Altura (M):</label>
+            <input class="form-control" type="text" id="altura" name="altura" placeholder="Altura" pattern="^(?:[0-1](\.[0-9]{1,2})?)?$" title="Ingrese una altima Maxima 1.9 Metros" maxlength="4" required>
 
-            {{!-- detalle --}}
-
-            <label id="weight" for="peso">Numero Telefonico:</label> <br>
-            <input class="form-control" type="text" id="peso" name="numero_telefonico" placeholder="Numero telefonico" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
-
-            <label id="weight" for="peso">Medicamentos:</label> <br>
-            <input class="form-control" type="text" id="peso" name="medicamentos" placeholder="Medicamentos" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-            <label id="weight" for="peso">Direccion del Propietario:</label> <br>
-            <input class="form-control" type="text" id="peso" name="direccion_mascota" placeholder="Direccion del Propietario" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-            <label id="weight" for="peso">Fecha de la vacuna:</label> <br>
-            <input class="form-control" type="text" id="peso" name="fecha_vacuna" placeholder="Fecha Vacuna" required>
-
-            <label id="weight" for="peso">Nombre del Propietario:</label> <br>
-            <input class="form-control" type="text" id="peso" name="nombre_propietario" placeholder="Nombre propietario" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-
-            <div class="login">
-                <button type="submit" id="">Registrar</button>
-            </div>
-            <div class="atras">
-           <button type="submit" id="">Guardar</button>
-            </div>
-            </div>
+            <label for="peso">Peso (KG):</label>
+            <input class="form-control" type="text" id="peso" name="peso" placeholder="Peso" title="Por favor, ingresa una peso maximo Maximo de 300 KG"  pattern="^(300(\.0{1,2})?|[0-2]?\d{1,2}(\.\d{1,2})?)$" required >
         </div>
-    </body>
-</form>
 
+        <div class="column">
+            <label for="medicamentos">Medicamentos:</label>
+            <select class="form-control">
+                <option value="resgistro" name="medicamentos"> 1</option>
+                <option value="resgistro" name="medicamentos"> 2</option>
+                <option value="resgistro" name="medicamentos"> 3</option>
+                <option value="resgistro" name="medicamentos">Otros</option>
+            </select>
+
+            <label for="inputDate">Fecha de Vacunación(Última Vacuna)</label>
+            <input type="date" class="form-control" id="inputDate" placeholder="última Vacuna">
+
+            <label for="nombre_propietario">Nombre del Propietario:</label>
+            <input class="form-control" type="text" id="nombre_propietario" name="nombre_propietario" placeholder="Nombre propietario" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"  required>
+
+            <label for="direccion_mascota">Direccion del Propietario:</label>
+            <input class="form-control" type="text" id="direccion_mascota" name="direccion_mascota" placeholder="Direccion del Propietario"  required="">
+
+            <label for="numero_telefonico">Numero Telefonico:</label>
+            <input class="form-control" type="text" id="numero_telefonico" name="numero_telefonico" placeholder="Numero telefonico" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
+        </div>
+        <div class="login">
+            <button type="submit" id="">Registrar</button>
+        </div>

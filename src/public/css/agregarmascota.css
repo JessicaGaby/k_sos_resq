@@ -1,3 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -500px;
+    margin-left: 600px
+}
+.column {
+    flex: 0 0 48%; /* Ajusta según sea necesario, dejando un pequeño espacio entre columnas */
+}
+
 .img3{
     max-width: 50%;
     height: 50vw;
@@ -9,9 +19,7 @@ h1{
     top: 10%;
     right: 13%;
 }
-.mb-3 {
-    margin-bottom: 1px;
-}
+
 label {
     display: block;
     margin-bottom: 2px;
@@ -19,24 +27,27 @@ label {
 }
 .form-control {
     width: 100%;
-    padding: 4px;
+    padding: 6px;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 5px;
+    border: 2px;
+    background-color: #dadbdd69;
 }
 .form-container {
-    width: 400px;
-    padding: 10px;
+    width: 800px; /* Ajusta según sea necesario */
+    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 20px;
-    background-color: #f8f9fa;
-    margin-left: 100px;
+    background-color: #a7a7a753;
+    margin-left: 50px;
+    margin-top: -87px;
 }
 .content {
     display: flex;
     align-items: center;
     justify-content: right;
     padding: -50px;
-    margin-top: -530px;
+    margin-top: -500px;
     margin-right: 100px;
 }
 .form-container img {
@@ -46,11 +57,16 @@ label {
 }
 .login{
     position: absolute;
-    top: 94%;
-    right: 20%;
+    top: 70%;
+    right: 25%;
 }
-.atras{
-    position: absolute;
-    top: 98%;
-    right: 20%;
+
+button {
+    background-color: #2563EB;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
 }
