@@ -48,7 +48,7 @@
             <input type="text" id="correo_persona" name="correo_persona" value="{{correo_persona}}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
 
             <label id="numero_persona" for="numero_persona">Telefono:</label> <br>
-            <input type="text" id="numero_persona" name="numero_persona" value="{{numero_persona}}" required>
+            <input type="text" id="numero_persona" name="numero_persona" value="{{numero_persona}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
 
             <br> <br><br>
             <br> <br>
