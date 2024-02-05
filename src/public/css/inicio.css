@@ -13,6 +13,7 @@ nav {
   width: 200px;
   height: 630px;
   text-align: center;
+
 }
 
 .textos {
@@ -155,3 +156,52 @@ h2, p {
   left: 930px;
   top: 410px; 
 }  
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .menu-item {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .menu-item img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .menu-item.active {
+    background-color: #f8f9fa;
+  }
+
+  .user-info,
+  .loca,
+  .cuando,
+  .mapa,
+  .dis,
+  .visua,
+  .cpu,
+  .mapita {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
