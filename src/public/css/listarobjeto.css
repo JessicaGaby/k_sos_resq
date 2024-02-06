@@ -9,7 +9,7 @@ body {
 nav {
     background-color: #f8f9fa;
     padding: 20px;
-    width: 200px;
+    width: 180px;
     text-align: center;
   }
 
@@ -66,27 +66,33 @@ h1.textos {
     color: #777;
 }
 
-
 .tabla-registros {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-left: 60px;
 }
-
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 15px 8px;
+  }
 .tabla-registros th{
-    padding: 10px;
     text-align: center;
-    color: #777;
+    color: #1b1b1b;
+    font-size: 11px;
 }
-
+th {
+    background-color: #f2f2f2;
+  }
+  
 .tabla-registros td {
-    padding: 2px;
     text-align: center;
     color: #777;
 }
 .tabla-registros td {
     text-align: center;
     padding-top: 20px;
+    font-size: 12px;
 }
 .tabla-registros a {
     text-decoration: none;
@@ -99,7 +105,8 @@ h1.textos {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 8px;
+    font-size: 10px;
 }
 
 .tabla-registros button:hover {
@@ -110,4 +117,13 @@ h1{
     margin-left: 400px;
     color: #109cf1;
     text-align: left;
+}
+.tabla-container {
+    overflow-x: auto;
+    max-width: 100%;
+    margin-left: 200px; /* Ajusta el margen según sea necesario */
+}
+.scroll{
+    overflow-y:hidden;
+    overflow-x:scroll;
 }
