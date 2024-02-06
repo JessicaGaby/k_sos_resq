@@ -10,31 +10,33 @@
 
                     <div class="mb-3">
                         <label for="inputName">Nombres</label>
-                        <input type="text" class="form-control" name="nombres"   id="inputName" placeholder="Nombre">
+                        <input type="text" class="form-control" name="nombres"    id="inputName" placeholder="Nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+"
+                    title="Solo se permiten letras y espacios" required>
                     </div>
                     <div class="mb-3">
                         <label for="inputLast">Apellidos</label>
-                        <input type="text" class="form-control" name="apellidos" id="inputLast" placeholder="Apellido">
+                        <input type="text" class="form-control" name="apellidos" id="inputLast" placeholder="Apellidos" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+"
+                    title="Solo se permiten letras y espacios" required>
                     </div>
                     <div class="mb-3">
-                        <label for="inputDate">Electronico</label>
-                        <input type="email" class="form-control" name="correoelectronico" id="inputDate" placeholder="Fecha de nacimiento">
+                        <label for="inputDate">Correo Electronico</label>
+                        <input type="email" class="form-control" name="correoelectronico" id="inputDate" placeholder="Correo Electronico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
                     </div>
                     <div class="mb-3">
-                        <label for="inputEmail">Contrasena</label>
-                        <input type="password" class="form-control" name="contrasena"  id="inputEmail" placeholder="Correo">
+                        <label for="inputEmail">Contraseña</label>
+                        <input type="password" class="form-control" name="contrasena"  id="inputEmail" placeholder="Contraseña">
                     </div>
                     <div class="mb-3">
-                        <label for="inputcontraseña">fecha registro</label>
-                        <input type="date" class="form-control" name="fecha_registro" id="inputcontraseña" placeholder="Contraseña">
+                        <label for="inputcontraseña">Fecha de registro</label>
+                        <input type="date" class="form-control" name="fecha_registro" id="inputcontraseña" placeholder="Fecha de Registro">
                     </div>
                     <div class="mb-3">
-                        <label for="inputPhone">fecha nacimiento</label>
-                        <input type="date" class="form-control" name="fecha_nacimiento" id="inputPhone" placeholder="Contacto de Emergencia">
+                        <label for="inputPhone">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" name="fecha_nacimiento" id="inputPhone" placeholder="Fecha de nacimiento">
                     </div>
                     <div class="mb-3">
-                        <label for="inputDirection">Contactos emergencia</label>
-                        <input type="text" class="form-control" name="contactos_emergencia" id="inputDirection" placeholder="Contacto de Emergencia">
+                        <label for="inputDirection">Contactos de emergencia</label>
+                        <input type="text" class="form-control" name="contactos_emergencia" id="inputDirection" placeholder="Contactos de emergencia" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
                     </div>
 
                     <div >
