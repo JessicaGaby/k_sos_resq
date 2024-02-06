@@ -9,8 +9,10 @@ body {
 nav {
     background-color: #f8f9fa;
     padding: 20px;
-    width: 180px;
+    width: 200px;
+    height: 100%px;
     text-align: center;
+    
   }
 
 .menu-item {
@@ -66,78 +68,67 @@ h1.textos {
     color: #777;
 }
 
-.tabla-registros {
-    width: 100%;
-    border-collapse: collapse;
-    margin-left: 200px;
+
+.contenedor {
+    margin: 20px;
 }
+
+table {
+    width: 850px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 90px;
+   
+}
+
 th, td {
     border: 1px solid #ddd;
+    padding: 8px;
     text-align: left;
-    padding: 15px 8px;
-  }
-.tabla-registros th{
-    text-align: center;
-    color: #1b1b1b;
-    font-size: 11px;
 }
+
 th {
     background-color: #f2f2f2;
-  }
-  
-.tabla-registros td {
-    text-align: center;
-    color: #777;
-}
-.tabla-registros td {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 12px;
-}
-.tabla-registros a {
-    text-decoration: none;
 }
 
-.tabla-registros button {
-    background-color: #2563EB;
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subir{
+    padding: 100px;
+    margin-left: 100px;
+}
+
+.contenedor-botones {
+    display: flex;
+    margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+}
+
+button {
+    width: 70px;
+    padding: 10px;
+    background-color: #109CF1;
     color: #fff;
-    padding: 5px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-right: 8px;
-    font-size: 10px;
+    margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+    height: 30px;
+    margin-top: -15px;
 }
 
-.tabla-registros button:hover {
-    background-color: #316dce;
+button:hover {
+    background-color: #0a88d8; /* Cambié el color de fondo al pasar el ratón */
 }
 
-h1{
-    margin-left: 350px;
-    color: #109cf1;
-    text-align: left;
+.cancelar {
+    /* Puedes ajustar el margen izquierdo según tus necesidades */
+    margin-left: 10px;
 }
-.scroll{
-    overflow-y:hidden;
-    overflow-x:scroll;
-}
-@media only screen and (max-width: 768px) {
-    .menu-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .menu-item img {
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-
-    .tabla-registros th, .tabla-registros td {
-        padding: 8px; /
-    }
-
-    .tabla-registros button {
-        padding: 5px 5px;
-    }
+.registrarse {
+    /* Puedes ajustar el margen derecho según tus necesidades */
+    margin-right: 10px;
 }

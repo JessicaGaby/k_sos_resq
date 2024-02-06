@@ -3,22 +3,23 @@
 
 <body>
     
-<nav>
-        <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
+ <nav>
+        <h1 class="textos">SOS RESQ</h1>
         <div class="user-info">
             <br><br>
             <h2>Camila</h2>
             <p>camila@example.com</p>
         </div>
-        {{!--  <a href="/usuario/agregar" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro">Usuario</a>  --}}
-        <a href="/registro_familiar/agregar/" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
-        <a href="/registro_familiar/listar/" class="menu-item"><img src="/img/circulo.png"Guardados> Datos Guardados</a>
-        <a href="/mensaje_personalizado/agregar/" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
-         <a href="/mensaje_personalizado/listar/" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
-        <a href="" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
-        <a href="/historial_activacion/agregar/" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
+        <a href="#" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro"> Registro Información</a>
+        <a href="#" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
+        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
+        <a href="#" class="menu-item"><img src="/img/circulo.png"Guardados> Datos Guardados</a>
+        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
+        <a href="#" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
+        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Ubicación"> Historial de Ubicación</a> 
+        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
          <br><br>
-         <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
+         <a href="#" class="underline-text">cerrar sesion <u></u></a>
    
     </nav> 
 
@@ -27,57 +28,50 @@
             <h1>Listado de mascotas</h1>
     
     
-    <div class="row">
-        {{#each lista}}
-        <div id="tarjeta">
-            <u><h2>Datos la mascota</h2></u>
-            <div>
-                <p>{{nombre_mascota}}</p>
-            <div>
-            <div>
-                <p>{{especie}}</p>
-            <div>
-            <div>
-                <p>{{raza}}</p>
-            <div>
-            <div>
-                <p>{{altura}}</p>
-            <div>
-            <div>
-                <p>{{peso}}</p>
-            <div>
+   
+<div class="contenedor">
+  <table>
+    <thead>
+      <tr>
+        <th>Datos de la mascota</th>
+        <th>Especie</th>
+        <th>Raza</th>
+        <th>Altura</th>
+        <th>Peso</th>
+        <th>Numero de telefono</th>
+        <th>Medicamentos</th>
+        <th>Direccion de la mascota</th>
+        <th>Fecha de vacuna</th>
+        <th>Propietario</th>
+        <th>Accion</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each lista}}
+      <tr>
+        <td>{{nombre_mascota}}</td>
+        <td>{{especie}}</td>
+        <td>{{raza}}</td>
+          <td>{{altura}}</td>
+        <td>{{peso}}</td>
+        <td>{{numero_telefonico}}</td>
+          <td>{{medicamentos}}</td>
+        <td>{{direccion_mascota}}</td>
+        <td>{{fecha_vacuna}}</td>
+          <td>{{nombre_propietario}}</td>
+        <td>
+           <div class="contenedor-botones">
+    <a href="/mascota/editar/{{id_mascota}}"><button class="cancelar" type="button">Editar</button></a>
 
-            {{!-- detalle --}}
-
-            <div>
-                <p>{{numero_telefonico}}</p>
-            <div>
-
-            <div>
-                <p>{{medicamentos}}</p>
-            <div>
-
-            <div>
-                <p>{{direccion_mascota}}</p>
-            <div>
-
-            <div>
-                <p>{{fecha_vacuna}}</p>
-            <div>
-
-            <div>
-                <p>{{nombre_propietario}}</p>
-            <div>    
-
-                <div>
-                    <a href="/mascota/editar/{{id_mascota}}"><button type="button">Editar</button></a>
-                </div></p>
-                <div>
-                    <a href="/mascota/eliminar/{{id_mascota}}"><button type="button" style="background-color: red;">Eliminar</button></a>
-                </div></p>
-            </div>
-        </div>
-        {{/each}}
+        <a href="/mascota/eliminar/{{id_mascota}}"><button class="registrarse" style="background-color: red;" type="button">Eliminar</button></a>
+       
     </div>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
 </div>
+
+ 
 </body>
