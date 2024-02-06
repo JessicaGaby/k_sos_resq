@@ -8,6 +8,11 @@
             <br><br>
             <h2>Camila</h2>
             <p>camila@example.com</p>
+             <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
         </div>
         {{!--  <a href="/usuario/agregar" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro">Usuario</a>  --}}
         <a href="/registro_familiar/agregar" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
@@ -67,3 +72,10 @@
 </div>
     
 </body>
+<script>
+    function toggleMenu() {
+        var menuItems = document.querySelector('.menu-items');
+
+        menuItems.classList.toggle('active');
+    }
+</script>

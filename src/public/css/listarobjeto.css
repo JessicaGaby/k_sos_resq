@@ -118,12 +118,26 @@ h1{
     color: #109cf1;
     text-align: left;
 }
-.tabla-container {
-    overflow-x: auto;
-    max-width: 100%;
-    margin-left: 200px; /* Ajusta el margen según sea necesario */
-}
 .scroll{
     overflow-y:hidden;
     overflow-x:scroll;
+}
+@media only screen and (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item img {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .tabla-registros th, .tabla-registros td {
+        padding: 8px; /
+    }
+
+    .tabla-registros button {
+        padding: 5px 5px;
+    }
 }
