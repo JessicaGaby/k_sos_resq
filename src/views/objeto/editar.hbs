@@ -10,7 +10,7 @@
             <h2>Camila</h2>
             <p>camila@example.com</p>
         </div>
-    <a href="/usuario/agregar" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro">Usuario</a>
+        {{!--  <a href="/usuario/agregar" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro">Usuario</a>  --}}
         <a href="/registro_familiar/agregar" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
         <a href="/registro_familiar/listar/" class="menu-item"><img src="/img/circulo.png"Guardados> Datos Guardados</a>
         <a href="/mensaje_personalizado/agregar/" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
@@ -33,7 +33,7 @@
             <input type="text" id="modelo" name="modelo" value="{{modelo}}" required>
 
             <label id="numero_series" for="numero_serie">Numero de Serie</label> <br>
-            <input type="number" id="numero_serie" name="numero_serie" value="{{numero_serie}}" pattern="[0-9a-zA-Z]+" maxlength="10" required>
+            <input type="number" id="numero_serie" name="numero_serie" value="{{numero_serie}}" required>
 
             <label id="numero_contacto" for="numero_contacto">Numero de Contacto</label> <br>
             <input type="number" id="numero_contacto" name="numero_contacto" value="{{numero_contacto}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>

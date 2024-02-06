@@ -1,24 +1,17 @@
 const bcrypt = require('bcrypt');
 
-const helpers = {};
+const helpers = {}
 
-helpers.hashPassword = async (password) => {
+helpers.encryptPassword = async (contrasena) =>{
+    const salt = await bcrypt.genSalt(10);
+    const hash = await bcrypt.hash(contrasena, salt);
+    return hash;
+}
+helpers.matchPassword = async (contrasena, savedPassword) => {
     try {
-        const saltRounds = 12;
-        const hashedPassword = await bcrypt.hash(password, saltRounds);
-        return hashedPassword;
-    } catch (error) {
-        throw new Error('Error al cifrar la contraseña');
+        return await bcrypt.compare(contrasena, savedPassword);
+    } catch (e) {
+        console.log(e)
     }
 };
-
-helpers.comparePassword = async (password, hashedPassword) => {
-    try {
-        const match = await bcrypt.compare(password, hashedPassword);
-        return match;
-    } catch (error) {
-        throw new Error('Error al comparar contraseñas');
-    }
-};
-
 module.exports = helpers;

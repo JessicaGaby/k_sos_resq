@@ -1,20 +1,30 @@
-const inicioCtl = {}
-const sql = require('../Database/dataBase.sql')
-const orm = require('../Database/dataBase.orm')
+const registro = {};
 
+const passport = require('passport');
 
-inicioCtl.Mostrar = (req, res) => {
-    res.render('registro');
+registro.mostrarRegistro = async(req, res) => {
+    res.render('login/registro');
+};
+//registro
+registro.Registro = passport.authenticate('local.signup', {
+    successRedirect: '/catalogo',
+    failureRedirect: '/registro',
+    failureFlash: true
+});
+
+registro.mostrarLogin = (req, res, next) =>{
+    res.render('login/login')
 }
+//login
+registro.Login = passport.authenticate('local.signin', {
+    successRedirect: '/inicio', //redireccion del login asia la vista de los botones
+    failureRedirect: '/login',
+    failureFlash: true
+});
 
-inicioCtl.mandar = async(req, res)=>{
-    const { mensaje, descripcion} = req.body
-    const nuevoEvio ={
-        mensaje,
-        descripcion
-    }
-    await orm.inicio.create(nuevoEvio)
-    req.flash('success', 'Guardado con exito')
-    res.redirect('/registro');
-}
-module.exports  = inicioCtl
+registro.cierreSesion = (req, res, next) => {
+    req.logOut();
+    res.redirect('/login');
+};
+
+module.exports = registro

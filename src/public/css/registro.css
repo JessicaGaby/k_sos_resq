@@ -88,33 +88,3 @@ p {
 
 
 
-/* Estilos para cada clase de botón con colores diferentes */
-.btn-mascota {
-    background-color: #3498db;
-    color: #fff;
-    border: 1px solid #3498db;
-}
-
-.btn-objeto {
-    background-color: #e74c3c;
-    color: #fff;
-    border: 1px solid #e74c3c;
-}
-
-.btn-persona {
-    background-color: #2ecc71;
-    color: #fff;
-    border: 1px solid #2ecc71;
-}
-
-/* Estilo al pasar el ratón por encima del botón */
-.btn:hover {
-    background-color: #555;
-    color: #fff;
-}
-
-.btn-container {
-    margin-left: 780px;
-
-    /* Puedes ajustar el valor según tu preferencia */
-}

@@ -1,13 +1,13 @@
-/*const inicioCtl = {}
+const catalogoCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
 
-inicioCtl.Mostrar = (req, res) => {
-    res.render('login');
+catalogoCtl.Mostrar = (req, res) => {
+    res.render('catalogo');
 }
 
-inicioCtl.mandar = async(req, res)=>{
+catalogoCtl.mandar = async(req, res)=>{
     const { mensaje, descripcion} = req.body
     const nuevoEvio ={
         mensaje,
@@ -15,6 +15,6 @@ inicioCtl.mandar = async(req, res)=>{
     }
     await orm.inicio.create(nuevoEvio)
     req.flash('success', 'Guardado con exito')
-    res.redirect('/login');
+    res.redirect('/catalogo');
 }
-module.exports  = inicioCtl*/
+module.exports  = catalogoCtl
