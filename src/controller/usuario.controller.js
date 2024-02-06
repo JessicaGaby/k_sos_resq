@@ -17,7 +17,6 @@ usuarioCtl.mandar = async (req, res) => {
         contrasena,
         fecha_registro,
         fecha_nacimiento,
-        //detalle
         contactos_emergencia,
         estado
         
@@ -49,7 +48,6 @@ usuarioCtl.actualizar = async (req, res) => {
         contrasena,
         fecha_registro,
         fecha_nacimiento,
-        //detalle
         contactos_emergencia,
         estado
     }

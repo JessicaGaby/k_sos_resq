@@ -56,22 +56,22 @@ label {
 .login{
     position: absolute;
     top: 95%;
-    right: 30%;
-    left: 73%;
-    
-}
-button {
-    background-color: #2563EB;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 5px;
+    right: 17%;
 }
 .atras{
     position: absolute;
     top: 95%;
-    right: 30%;
-    left: 68%;
+    right: 25%;
 }
+button {
+    background-color: #2563EB;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+
