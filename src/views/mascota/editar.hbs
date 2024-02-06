@@ -43,13 +43,14 @@
         <label id="weight" for="peso">Peso (KG):</label> <br>
         <input type="text" id="peso" name="peso" value="{{peso}}" title="Por favor, ingresa una peso maximo Maximo de 300 KG"  pattern="^(300(\.0{1,2})?|[0-2]?\d{1,2}(\.\d{1,2})?)$" required>
 
-        <label for="medicamentos">Medicamentos:</label>
-        <select class="form-control" name="medicamentos" value="{{medicamentos}}">
-                <option value="{{medicamentos}}" name="medicamentos"> 1</option>
-                <option value="{{medicamentos}}" name="medicamentos"> 2</option>
-                <option value="{{medicamentos}}" name="medicamentos"> 3</option>
-                <option value="{{medicamentos}}" name="medicamentos">Otros</option>
+        <label id="weight" for="medicamentos">Medicamentos:</label>
+        <select class="form-control" name="medicamentos">
+        <option value="1" {% if medicamentos == '1' %}selected{% endif %}>1</option>
+        <option value="2" {% if medicamentos == '2' %}selected{% endif %}>2</option>
+        <option value="3" {% if medicamentos == '3' %}selected{% endif %}>3</option>
+        <option value="Otros" {% if medicamentos == 'otros' %}selected{% endif %}>Otros</option>
         </select>
+
 
         {{!-- detalle --}}
 
