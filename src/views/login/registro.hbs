@@ -22,17 +22,15 @@
                         <label for="inputDate">Correo Electronico</label>
                         <input type="email" class="form-control" name="correoelectronico" id="inputDate" placeholder="Correo Electronico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="inputEmail">Contraseña</label>
-                        <input type="password" class="form-control" name="contrasena"  id="inputEmail" placeholder="Contraseña">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputcontraseña">Fecha de registro</label>
-                        <input type="date" class="form-control" name="fecha_registro" id="inputcontraseña" placeholder="Fecha de Registro">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputPhone">Fecha de nacimiento</label>
-                        <input type="date" class="form-control" name="fecha_nacimiento" id="inputPhone" placeholder="Fecha de nacimiento">
+                   <div class="mb-3">
+                   <label for="inputEmail">Contraseña</label>
+                   <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña">
+                    <input type="checkbox" id="mostrarContrasena"> Mostrar contraseña
+                   </div>
+
+                   <div class="mb-3">
+                     <label for="inputPhone">Fecha de nacimiento</label>
+                      <input type="date" class="form-control" name="fecha_nacimiento" id="inputPhone" placeholder="Fecha de nacimiento" oninput="validarEdad(this)">
                     </div>
                     <div class="mb-3">
                         <label for="inputDirection">Contactos de emergencia</label>
@@ -47,8 +45,12 @@
             <br><br>
             <h3>Favor de completar el registro para asignar el destinatario del botón de pánico</h3>
 
-
+            
         </div>
         </div>
+            <script src="/script/registro/registro.js"></script>
+            <script src="/script/registro/fechanacimiento.js"></script>
+  
     </body>
 </form>
+

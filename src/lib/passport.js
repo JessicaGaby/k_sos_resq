@@ -59,17 +59,15 @@ passport.use(
         async (req,  correoelectronico, contrasena, done) => {
             const usuarios = await orm.usuario.findOne({ where: {  correoelectronico:correoelectronico} });
             if (usuarios === null) {
-                const { nombres, apellidos, correoelectronico, contrasena, fecha_registro, fecha_nacimiento, contactos_emergencia, estado } = req.body;
+                const { nombres, apellidos, correoelectronico, contrasena, fecha_nacimiento, contactos_emergencia } = req.body;
                 let nuevoUsuario = {
                     ///
                     nombres,
                     apellidos,
                     correoelectronico,
                     contrasena,
-                    fecha_registro,
                     fecha_nacimiento,
-                    contactos_emergencia,
-                    estado
+                    contactos_emergencia
                 };
                 nuevoUsuario.contrasena = await helpers.encryptPassword(contrasena);
                 const resultado = await orm.usuario.create(nuevoUsuario);
