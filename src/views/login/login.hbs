@@ -1,24 +1,37 @@
 <link rel="stylesheet" href="/css/login.css">
+
 <form action="/login" method="post">
 <body>
     <img src="/img/sos.png" class="imagen1">
     <img src="/img/iconsos.jpg" class="imagen2">
-    <div class="formulario">
-        <img src="/img/usuario.jpeg" class="img">
-        <input  name="correoelectronico" type="text" required>
-        <label>Usuario</label> 
+
+
+<div class="formulario">
+    <div class="input-con-icono1">
+        <i class="fas fa-envelope"></i>
+        <input name="correoelectronico" type="text" placeholder="Correo Electronico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
+
     </div>
-    <div class="contraseña">
-        <img src="/img/cnd.jpeg" class="img">
-        <input name="contrasena" type="password" required>
-        <label class="LB">Contraseña</label>
+</div>
+
+<div class="contraseña">
+    <div class="input-con-icono">
+        <i class="fas fa-lock" id="icono-contrasena"></i>
+        <input id="contrasena" name="contrasena" type="password" placeholder="Contraseña" required>
+        <i class="fas fa-eye" id="mostrarContrasenaIcono" onclick="mostrarOcultarContrasena()"></i>
     </div>
+</div>
+
+
+
     <div class="">
         <input type="submit" value="Iniciar Sesión">
     </div>
     <br>
     <h2>¿Eres Nuevo Usuario?</h2>
     <a href="/registro"><h4>Registrarse</h4></a>
+
+    <script src="/script/registro/registro.js"></script>
 
 </body>
 
