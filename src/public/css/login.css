@@ -79,7 +79,8 @@ label {
 }
 
 
-/* ESTILOS DEL ICONO */
+/* ESTILOS DEL ICONO CORREO */
+
 
 .input-con-icono1 {
     position: relative;
@@ -98,6 +99,7 @@ label {
 }
 
 
+/* ESTILOS DEL ICONO CONTRASEÑA */
 
 .input-con-icono {
     position: relative;
@@ -115,6 +117,9 @@ label {
     padding-left: 30px; /* Ajusta el espacio a la derecha del icono */
 }
 
+
+ 
+/* ESTILOS DEL ICONO CONTRASEÑA */
 
 #mostrarContrasenaIcono {
     cursor: pointer;
