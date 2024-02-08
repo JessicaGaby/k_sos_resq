@@ -1,143 +1,140 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    height: 100vh;
 }
 
-nav {
+#sidebar {
+    width: 250px;
     background-color: #f8f9fa;
+    color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#sidebar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#sidebar a:hover {
+    background-color: #6ddef1;
+}
+
+.main {
     padding: 20px;
-    width: 180px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+.textos {
+    color: #109cf1;
+    font-size: 24px;
+    border-bottom: 1px solid purple; 
+    padding-bottom: 2px; 
+   border-bottom-width: 2.5px; 
+}
+.underline-text {
     text-align: center;
-  }
+    border-bottom: 1px solid black; 
+    padding-bottom: 2px; 
+    border-bottom-width: 2.5px; 
+}
+
+.menu-item img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
 
 .menu-item {
     display: flex;
     align-items: center;
     color: #333;
     text-decoration: none;
-    margin-bottom: 10px;
-  }
-  
-.menu-item img {
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-  }
-  
-.menu-item:hover {
-    color: #109cf1;
-  }
-
-.menu-item.active {
-    background-color: white;
+    margin-bottom: -10px;
 }
 
-.underline-text {
-    color: #333;
-    text-decoration: underline;
-}
-.textos {
-    color: #109cf1;
-    font-size: 24px;
-}
-h1.textos {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 10px; /* Puedes ajustar el margen según tus preferencias */
+
+
+*---------------/solo tabla------------------------------------
+
+.contenedor {
+    margin: 20px;
 }
 
-.user-info {
+table {
+    width: 950px;
+    border-collapse: collapse;
+    margin-top: -90px;
+    margin-left: 270px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.user-info h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
+.subir {
+    padding: 100px;
+    margin-left: 100px;
+    margin-top: -100px;
 }
 
-.user-info p {
-    margin: 0;
-    font-size: 14px;
-    color: #777;
+.contenedor-botones {
+    display: flex;
+    margin-top: 20px; 
 }
 
-.tabla-registros {
-    width: 100%;
-    border-collapse: collapse;
-    margin-left: 60px;
-}
-th, td {
-    border: 1px solid #ddd;
-    text-align: left;
-    padding: 15px 8px;
-  }
-.tabla-registros th{
-    text-align: center;
-    color: #1b1b1b;
-    font-size: 11px;
-}
-th {
-    background-color: #f2f2f2;
-  }
-  
-.tabla-registros td {
-    text-align: center;
-    color: #777;
-}
-.tabla-registros td {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 12px;
-}
-.tabla-registros a {
-    text-decoration: none;
-}
-
-.tabla-registros button {
-    background-color: #2563EB;
+button {
+    width: 70px;
+    padding: 10px;
+    background-color: #109CF1;
     color: #fff;
-    padding: 5px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-right: 8px;
-    font-size: 10px;
+    margin-right: 10px;
+    height: 30px;
+    margin-top: -15px;
 }
 
-.tabla-registros button:hover {
-    background-color: #316dce;
+button:hover {
+    background-color: #0a88d8; 
 }
 
-h1{
-    margin-left: 400px;
-    color: #109cf1;
-    text-align: left;
+.user-info h3 {
+  margin-top: -3px;
+  margin-left: 100px;
 }
-.scroll{
-    overflow-y:hidden;
-    overflow-x:scroll;
-}
-@media only screen and (max-width: 768px) {
-    .menu-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .menu-item img {
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-
-    .tabla-registros th, .tabla-registros td {
-        padding: 8px; /
-    }
-
-    .tabla-registros button {
-        padding: 5px 5px;
-    }
+h4 {
+    margin-top: -10px;
+    margin-left: 40px;
+    color: gray;
 }

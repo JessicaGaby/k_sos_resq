@@ -109,7 +109,7 @@ main {
   color: #fff;
   border-radius: 0 5px 5px 0;
   margin-right: 96%;
-  
+  margin-top: -2px;
 }
 
 #menu-toggle:checked~#sidebar {
