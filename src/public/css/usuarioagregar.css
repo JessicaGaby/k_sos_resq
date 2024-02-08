@@ -1,48 +1,120 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: row;
 }
 
-nav {
-    background-color: #f8f9fa;
-    padding: 20px;
-    width: 200px;
-    height: 620px;
-    text-align: center;
+.container {
+    display: flex;
+}
 
+#sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    color: black;
+    transition: all 0.3s;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    bottom: 0;
+}
+
+#sidebar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#sidebar a:hover {
+    background-color: #6ddef1;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+    transition: margin-left 0.3s;
+    margin-left: 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 9px;
+    background-color: black;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    margin-right: 96%;
+    
+}
+
+#menu-toggle:checked~#sidebar {
+    left: 0;
+}
+
+#menu-toggle:checked~main {
+    margin-left: 250px;
+}
+
+
+#sidebar.active {
+    left: 0;
+}
+
+main.menu-open {
+    margin-left: 250px;
+}
+
+.contenedor {
+    margin: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .textos {
     color: #109cf1;
     font-size: 24px;
+    border-bottom: 1px solid purple;
+    padding-bottom: 2px;
+    border-bottom-width: 2.5px;
+
+    margin-left: 70px;
 }
 
-.user-info {
-    margin-bottom: 20px;
+.subir {
+    padding: 100px;
+    margin-left: 100px;
 }
 
-.user-info h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
+@media (max-width: 768px) {}
+
+
+.user-info h3 {
+    padding: 20px;
+    margin-left: 100px;
 }
 
-.user-info p {
-    margin: 0;
-    font-size: 14px;
-    color: #777;
+h4 {
+    margin-top: -30px;
+    margin-left: 40px;
+    color: gray;
 }
 
-.menu-item {
-    display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
-    margin-bottom: 10px;
+.underline-text {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    border-bottom-width: 2.5px;
 }
 
 .menu-item img {
@@ -51,17 +123,16 @@ nav {
     height: 25px;
 }
 
-.menu-item:hover {
-    color: #109cf1;
-}
-
-.menu-item.active {
-    background-color: white;
-}
-
-.underline-text {
+.menu-item {
+    display: flex;
+    align-items: center;
     color: #333;
-    text-decoration: underline;
+    text-decoration: none;
+    margin-bottom: -10px;
+}
+
+.subida {
+    margin-top: -10px;
 }
 
 h1.textos {
@@ -69,7 +140,8 @@ h1.textos {
     position: absolute;
 }
 
-h2, p {
+h2,
+p {
     margin-right: 10px;
 
 }
@@ -79,12 +151,12 @@ h2, p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -550px;
-    margin-left: 550px;
+    margin-top: -30px;
+    margin-left: 100px;
 }
 
 .crud-content {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -115,11 +187,51 @@ button {
     width: 50%;
     margin-left: 70px;
 }
-.imagen{
+
+.imagen {
     display: flex;
     width: 100px;
     height: 100px;
-    margin-left: 100px;
+    margin-left: 900px;
     padding: 50px;
+    margin-top: -740px;
 }
 
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        overflow-x: hidden;
+        /* Prevent horizontal scrolling */
+        overflow-y: auto;
+        /* Allow vertical scrolling */
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .menu-item {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menu-item img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-item.active {
+        background-color: #f8f9fa;
+    }
+
+}
